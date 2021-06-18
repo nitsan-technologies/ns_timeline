@@ -1,0 +1,64 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="frst-container {f:if(condition: '{content.alignment} == 0', then: 'content-alternate', else: '{f:if(condition:\'{content.alignment} == 2\', then:\'content-left-align\', else:\'content-right-align\')}')}" data-animation-name="{f:if(condition: '{content.animationslist}', then: '{content.animationslist}', else: 'slideInUp')}">
+    
+    <div class="frst-timeline frst-timeline-style-2 {f:if(condition: '{content.alignment} == 0', then: 'frst-alternate', else: '{f:if(condition:\'{content.alignment} == 2\', then:\'frst-left-align\', else:\'frst-right-align\')}')} {f:if(condition: '{content.dateOpposite}', then: 'frst-date-opposite')} timeline-theme--{f:if(condition: '{content.selectTheme}', then: '{content.selectTheme}')}">
+
+        <!-- frst-timeline-block -->
+        <link href="{f:uri.resource(path:'css/frst-timeline-style-2.css', extensionName: 'ns_timeline')}" rel="stylesheet" />
+        
+        <f:for each="{content.section}" as="newContent" iteration="iterator">
+            <div class="frst-timeline-block frst-{f:if(condition: '{iterator.isOdd}', then: 'odd', else: 'even')}-item" data-animation="{f:if(condition: '{content.animationslist}', then: '{content.animationslist}', else: 'slideInUp')}">
+                <div class="frst-timeline-img">
+                    <f:if condition="{content.selectTheme} == 'default'">
+                        <f:then>
+                            <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
+                                <f:then>
+                                    <span style="background: {f:cObject(typoscriptObjectPath: 'lib.themeColor')}"></span>
+                                </f:then>
+                                <f:else>
+                                    <span style="background: {content.themeColor}"></span>
+                                </f:else>
+                            </f:if>
+                        </f:then>
+                        <f:else>
+                            <span></span>
+                        </f:else>
+                    </f:if>
+                </div>
+                <!-- frst-timeline-img -->
+                <div class="frst-timeline-content">
+                    <div class="frst-timeline-content-inner">
+                        <f:if condition="{content.dateFormat} && {newContent.date}">
+                            <f:then>
+                                <span class="frst-date">
+                                    <f:format.date format="{content.dateFormat}">{newContent.date}</f:format.date>
+                                </span>
+                            </f:then>
+                            <f:else>
+                                <span class="frst-date">
+                                    <f:format.date format="d, F">{newContent.date}</f:format.date>
+                                </span>
+                            </f:else>
+                        </f:if>
+                        <f:if condition="{newContent.title}">
+                            <f:if condition="{newContent.link}">
+                                <f:then>
+                                    <f:link.typolink parameter="{newContent.link}"><h2>{newContent.title}</h2></f:link.typolink>
+                                </f:then>
+                                <f:else>
+                                    <h2>{newContent.title}</h2>
+                                </f:else>
+                            </f:if>
+                        </f:if>
+                        <f:if condition="{newContent.text}">
+                            <f:format.html>{newContent.text}</f:format.html>
+                        </f:if>
+                    </div>
+                </div>
+            </div>
+        </f:for>
+    </div>
+</div>        
+
+</html>

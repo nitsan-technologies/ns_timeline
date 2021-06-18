@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-07-24T20:37:42Z">
+		<header/>
+		<body>
+			<trans-unit id="palette.access">
+                <source>Access</source>
+            </trans-unit>
+            <trans-unit id="title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="extension_title">
+                <source>Ns Timeline</source>
+            </trans-unit>
+            
+            <trans-unit id="yesterday">
+                <source>YESTERDAY</source>
+            </trans-unit>
+            <trans-unit id="today">
+                <source>TODAY</source>
+            </trans-unit>
+            <trans-unit id="tomorrow">
+                <source>TOMORROW</source>
+            </trans-unit>
+            <trans-unit id="type.image">
+                <source>Upload Image</source>
+            </trans-unit>
+            <trans-unit id="type.video">
+                <source>Upload Video</source>
+            </trans-unit>
+            <trans-unit id="type.videoUrl">
+                <source>Upload Video with URL</source>
+            </trans-unit>
+            <trans-unit id="type.videoUrl">
+                <source>Upload Video with URL</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
