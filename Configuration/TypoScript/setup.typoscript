@@ -31,17 +31,17 @@ page {
         )
     }
     includeCSS {
-        310 = typo3conf/ext/ns_timeline/Resources/Public/css/reset.css
-        320 = typo3conf/ext/ns_timeline/Resources/Public/css/animate.min.css
-        330 = typo3conf/ext/ns_timeline/Resources/Public/css/default.min.css
-        340 = typo3conf/ext/ns_timeline/Resources/Public/css/demo.css
-        350 = typo3conf/ext/ns_timeline/Resources/Public/font-awesome/css/font-awesome.css
+        310 = EXT:ns_timeline/Resources/Public/css/reset.css
+        320 = EXT:ns_timeline/Resources/Public/css/animate.min.css
+        330 = EXT:ns_timeline/Resources/Public/css/default.min.css
+        340 = EXT:ns_timeline/Resources/Public/css/demo.css
+        350 = EXT:ns_timeline/Resources/Public/font-awesome/css/font-awesome.css
         360 = https://fonts.googleapis.com/css?family=Titillium+Web
     }
     includeJSFooter {
-        390 = typo3conf/ext/ns_timeline/Resources/Public/js/jquery.overscroll.min.js
-        410 = typo3conf/ext/ns_timeline/Resources/Public/js/frst-timeline.min.js
-        420 = typo3conf/ext/ns_timeline/Resources/Public/js/custom.js
+        390 = EXT:ns_timeline/Resources/Public/js/jquery.overscroll.min.js
+        410 = EXT:ns_timeline/Resources/Public/js/frst-timeline.min.js
+        420 = EXT:ns_timeline/Resources/Public/js/custom.js
     }
 }    
 
