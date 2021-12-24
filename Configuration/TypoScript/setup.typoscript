@@ -27,7 +27,7 @@ page {
     headerData{
         380 = TEXT
         380.value(
-            <script src="/t310/typo3conf/ext/ns_timeline/Resources/Public/js/modernizr.js?1613561587"></script>
+            <script src="/typo3conf/ext/ns_timeline/Resources/Public/js/modernizr.js?1613561587"></script>
         )
     }
     includeCSS {
