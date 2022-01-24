@@ -23,7 +23,7 @@
     }
   },
   "replace": {
-    "nitsan/ns-timeline": "self.version"
+    "typo3-ter/ns-timeline": "self.version"
   },
   "config": {
     "vendor-dir": ".Build/vendor/",
