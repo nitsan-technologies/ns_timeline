@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
 	'title' => '[NITSAN] Events & Timeline TYPO3 Extension',
-	'description' => 'All In One Timeline TYPO3 Extension lets you create stories, timelines, history, roadmap, and what not with unlimited possibilities and 18 unique styles and layouts. Live-Demo: https://demo.t3terminal.com//t3t-extensions/timeline You can download PRO version for more-features & free-support at https://t3terminal.com/ns-timeline-typo3-extension',
+	'description' => 'All In One Timeline TYPO3 Extension lets you create stories, timelines, history, roadmap, and what not with unlimited possibilities and 18 unique styles and layouts. Live-Demo: https://demo.t3planet.com//t3t-extensions/timeline You can download PRO version for more-features & free-support at https://t3planet.com/ns-timeline-typo3-extension',
 	'category' => 'plugin',
 	'author' => 'Team NITSAN',
 	'author_email' => 'info@nitsan.in',
