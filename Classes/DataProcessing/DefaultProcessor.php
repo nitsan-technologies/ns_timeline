@@ -79,8 +79,8 @@ class DefaultProcessor implements DataProcessorInterface
                         foreach ($base['lDEF'] as $optionKey => $optionValue) {
                             
                             // Check Condition For News
-                            $orderingByData = $base['lDEF']['newsOrderBy']['vDEF'];
-                            $orderingDirectionData = $base['lDEF']['newsOrderDirection']['vDEF'];
+                            $orderingByData = isset($base['lDEF']['newsOrderBy']['vDEF']) ? $base['lDEF']['newsOrderBy']['vDEF'] : '';
+                            $orderingDirectionData = isset($base['lDEF']['newsOrderDirection']['vDEF']) ? $base['lDEF']['newsOrderDirection']['vDEF'] : '';
                     
                             if($optionKey == 'startingpoint')
                             {
@@ -132,19 +132,23 @@ class DefaultProcessor implements DataProcessorInterface
                                                 foreach ($subsubArrayItem['el'] as $subkey => $value) {
 
                                                     // Convert Multiple Images to Array
+                                                    if(isset($subsubArrayItem['el']['image']['vDEF'])){
                                                     $options['sectionimages'] = explode(',', $subsubArrayItem['el']['image']['vDEF']);
+                                                    }
 
+                                                    $options[$optionKey] = isset($options[$optionKey]) ? $options[$optionKey] : [];
                                                     if (!is_array($options[$optionKey])) {
                                                         $options[$optionKey] = [];
                                                     }
 
+                                                    $options[$optionKey][$subprekey] = isset($options[$optionKey][$subprekey]) ? $options[$optionKey][$subprekey] : [];
                                                     if (!is_array($options[$optionKey][$subprekey])) {
                                                         $options[$optionKey][$subprekey] = [];
                                                     }
                                                     
                                                     // Add Images Array to Main Aray
                                                     $options[$optionKey][$subprekey][$subkey] = $value['vDEF'];
-                                                    $options[$optionKey][$subprekey]['image'] = $options['sectionimages'];
+                                                    $options[$optionKey][$subprekey]['image'] = isset($options['sectionimages']) ? $options['sectionimages'] : '';
                                                     
                                                 }
                                             }
@@ -167,12 +171,13 @@ class DefaultProcessor implements DataProcessorInterface
                 {   
                     foreach ($options['section'] as $subdatekey => $datevalue) 
                     {
-                        $time[$subdatekey] = $datevalue['timeFrom'];
+                        $time[$subdatekey] = isset($datevalue['timeFrom']) ? $datevalue['timeFrom'] : '';
                         $date[$subdatekey] = $datevalue['date'];
                     }
 
                     if(!empty($datevalue['date'])){
                         $date  = array_column($options['section'], 'date');
+                        $options['newsOrderDirection'] = isset($options['newsOrderDirection']) ? $options['newsOrderDirection'] : 'asc';
                         if ($options['newsOrderDirection'] == 'asc') {
                             array_multisort($date, SORT_ASC, $options['section']);
                         }
