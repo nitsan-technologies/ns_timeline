@@ -1,6 +1,8 @@
 <?php
 // Let's configuration of this extension from "Extension Manager"
-$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['ns_timeline'] = unserialize($_EXTCONF);
+if(isset($_EXTCONF)){
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['ns_timeline'] = unserialize($_EXTCONF);
+}
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ns_timeline/Configuration/TsConfig/NewContentElement.tsconfig">'

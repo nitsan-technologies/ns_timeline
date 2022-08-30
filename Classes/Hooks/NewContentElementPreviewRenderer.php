@@ -52,8 +52,8 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
             $flexFormAsArray = GeneralUtility::xml2array($row['pi_flexform']);
             $chkmaintype = $flexFormAsArray['data']['sDEF']['lDEF']['mainType']['vDEF'];   // Get Maintype Value
             $mynormalVariation = $flexFormAsArray['data']['sDEF']['lDEF']['normalVariation']['vDEF'];   // Get Standard Type Values
-            $myeventVariation = $flexFormAsArray['data']['sDEF']['lDEF']['eventVariation']['vDEF'];   // Get Event Type Values 
-            $mynewsVariation = $flexFormAsArray['data']['sDEF']['lDEF']['newsVariation']['vDEF'];   // Get News Type Values
+            $myeventVariation = isset($flexFormAsArray['data']['sDEF']['lDEF']['eventVariation']['vDEF']) ? $flexFormAsArray['data']['sDEF']['lDEF']['eventVariation']['vDEF'] : null;   // Get Event Type Values 
+            $mynewsVariation = isset($flexFormAsArray['data']['sDEF']['lDEF']['newsVariation']['vDEF']) ? $flexFormAsArray['data']['sDEF']['lDEF']['newsVariation']['vDEF'] : null;   // Get News Type Values
 
             $view = $this->getFluidTemplate($extKey, 'NsTimeline', $chkmaintype, $mynormalVariation, $myeventVariation, $mynewsVariation);
             
@@ -92,8 +92,8 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
                             foreach ($base['lDEF'] as $optionKey => $optionValue) {
 
                                 // Check Condition For News
-                                $orderingByData = $base['lDEF']['newsOrderBy']['vDEF'];
-                                $orderingDirectionData = $base['lDEF']['newsOrderDirection']['vDEF'];
+                                $orderingByData = isset($base['lDEF']['newsOrderBy']['vDEF']) ? $base['lDEF']['newsOrderBy']['vDEF'] : null;
+                                $orderingDirectionData = isset($base['lDEF']['newsOrderDirection']['vDEF']) ? $base['lDEF']['newsOrderDirection']['vDEF'] : null;
                                 if($optionKey == 'startingpoint')
                                 {
                                     // get News Uid Listing From Storage Pid
@@ -133,19 +133,23 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
                                                     foreach ($subsubArrayItem['el'] as $subkey => $value) {
 
                                                         // Convert Multiple Images to Array
-                                                        $options['sectionimages'] = explode(',', $subsubArrayItem['el']['image']['vDEF']);
+                                                        if(isset($subsubArrayItem['el']['image']['vDEF'])){
+                                                            $options['sectionimages'] = explode(',', $subsubArrayItem['el']['image']['vDEF']);
+                                                        }
 
+                                                        $options[$optionKey] = isset($options[$optionKey]) ? $options[$optionKey] : [];
                                                         if (!is_array($options[$optionKey])) {
                                                             $options[$optionKey] = [];
                                                         }
 
+                                                        $options[$optionKey][$subprekey] = isset($options[$optionKey][$subprekey]) ? $options[$optionKey][$subprekey] : [];
                                                         if (!is_array($options[$optionKey][$subprekey])) {
                                                             $options[$optionKey][$subprekey] = [];
                                                         }
                                                         
                                                         // Add Images Array to Main Array
                                                         $options[$optionKey][$subprekey][$subkey] = $value['vDEF'];
-                                                        $options[$optionKey][$subprekey]['image'] = $options['sectionimages'];
+                                                        $options[$optionKey][$subprekey]['image'] = isset($options['sectionimages']) ? $options['sectionimages'] : '';
                                                     }
                                                 }
                                             }
