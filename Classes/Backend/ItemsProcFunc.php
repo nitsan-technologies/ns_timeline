@@ -18,35 +18,6 @@ class ItemsProcFunc
             ];
       }
 
-      /**
-      * Modifies the Styles list options.
-      *
-      * @param array &$config configuration array
-      */
-      public function getNewsStylesList(array &$config)
-      {
-            // change this to dynamically populate the list!
-            $config['items'] = [
-                  ['None', ''],
-                  ['Style 01', 'style-8'],
-            ];
-      }
-
-      /**
-      * Modifies the Styles list options.
-      *
-      * @param array &$config configuration array
-      */
-      public function getEventStylesList(array &$config)
-      {
-            // change this to dynamically populate the list!
-            $config['items'] = [
-                  ['None', ''],
-                  ['Style 01', 'style-11'],
-                  ['Style 02', 'style-12'],
-            ];
-      }
-
     /**
     * Modifies the icon list options.
     *
@@ -416,70 +387,4 @@ class ItemsProcFunc
             ];
     }
 
-    /**
-    * Modifies the of Animation list options.
-    *
-    * @param array &$config configuration array
-    */
-    public function getAnimationsList(array &$config)
-    {
-        // change this to dynamically populate the list!
-        $config['items'] = [
-                  ['No animation', ''],
-                  ['Attention Seekers', '--div--'],
-                  ['Bounce', 'bounce'],
-                  ['Flash', 'flash'],
-                  ['Pulse', 'pulse'],
-                  ['Rubberband', 'rubberBand'],
-                  ['Shake', 'shake'],
-                  ['Swing', 'swing'],
-                  ['Tada', 'tada'],
-                  ['Wobble', 'wobble'],
-                  ['Jello', 'jello'],
-                  ['Hinge', '--div--'],
-                  ['HingeTop', 'hingeTop'],
-                  ['HingeBottom', 'hingeBottom'],
-                  ['HingeLeft', 'hingeLeft'],
-                  ['HingeRight', 'hingeRight'],
-                  ['Bouncing Effects', '--div--'],
-                  ['BounceIn', 'bounceIn'],
-                  ['BounceInDown', 'bounceInDown'],
-                  ['BounceInLeft', 'bounceInLeft'],
-                  ['BounceInRight', 'bounceInRight'],
-                  ['BounceInUp', 'bounceInUp'],
-                  ['Fading Effects', '--div--'],
-                  ['Fadein', 'fadeIn'],
-                  ['Fadeindown', 'fadeInDown'],
-                  ['Fadeindownbig', 'fadeInDownBig'],
-                  ['Fadeinleft', 'fadeInLeft'],
-                  ['Fadeinleftbig', 'fadeInLeftBig'],
-                  ['Fadeinright', 'fadeInRight'],
-                  ['Fadeinrightbig', 'fadeInRightBig'],
-                  ['Fadeinup', 'fadeInUp'],
-                  ['Fadeinupbig', 'fadeInUpBig'],
-                  ['Flippers Effects', '--div--'],
-                  ['Flip', 'flip'],
-                  ['Flipinx', 'flipInX'],
-                  ['Flipiny', 'flipInY'],
-                  ['Lightspeed', '--div--'],
-                  ['LightspeedIn', 'lightSpeedIn'],
-                  ['Rotating Effects', '--div--'],
-                  ['Rotatein', 'rotateIn'],
-                  ['Rotateindownleft', 'rotateInDownLeft'],
-                  ['Rotateindownright', 'rotateInDownRight'],
-                  ['Rotateinupleft', 'rotateInUpLeft'],
-                  ['Rotateinupright', 'rotateInUpRight'],
-                  ['Sliding Effects', '--div--'],
-                  ['Slideindown', 'slideInDown'],
-                  ['Slideinleft', 'slideInLeft'],
-                  ['Slideinright', 'slideInRight'],
-                  ['Slideinup', 'slideInUp'],
-                  ['Zoom Effects', '--div--'],
-                  ['Zoomin', 'zoomIn'],
-                  ['Zoomindown', 'zoomInDown'],
-                  ['Zoominleft', 'zoomInLeft'],
-                  ['Zoominright', 'zoomInRight'],
-                  ['Zoominup', 'zoomInUp'],
-            ];
-    }
 }
