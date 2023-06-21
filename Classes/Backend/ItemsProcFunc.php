@@ -9,7 +9,7 @@ class ItemsProcFunc
       *
       * @param array &$config configuration array
       */
-      public function getNormalStylesList(array &$config)
+      public function getNormalStylesList(array &$config): void
       {
             // change this to dynamically populate the list!
             $config['items'] = [
@@ -23,7 +23,7 @@ class ItemsProcFunc
     *
     * @param array &$config configuration array
     */
-    public function getIconsList(array &$config)
+    public function getIconsList(array &$config): void
     {
         // change this to dynamically populate the list!
         $config['items'] = [

@@ -94,10 +94,10 @@ final class NewContentElementPreviewRenderer
     /**
      * @param string $extKey
      * @param string $templateName
-     * @return string the fluid template
      */
     protected function getFluidTemplate($extKey, $templateName, $chkmaintype, $mynormalVariation)
     {
+        $fluidTemplateFile =[];
         // Call Standard Variation style 1 to 7
         if ($chkmaintype == '0' && $mynormalVariation != '') {
             $fluidTemplateFile = GeneralUtility::getFileAbsFileName('EXT:' . $extKey . '/Resources/Private/Templates/Backend/' . $mynormalVariation . '.html');
