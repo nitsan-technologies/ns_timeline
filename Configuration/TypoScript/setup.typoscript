@@ -36,7 +36,7 @@ page {
         330 = EXT:ns_timeline/Resources/Public/css/default.min.css
         340 = EXT:ns_timeline/Resources/Public/css/demo.css
         350 = EXT:ns_timeline/Resources/Public/font-awesome/css/font-awesome.css
-        # 360 = https://fonts.googleapis.com/css?family=Titillium+Web
+        360 = https://fonts.googleapis.com/css?family=Titillium+Web
     }
     includeJSFooter {
         390 = EXT:ns_timeline/Resources/Public/js/jquery.overscroll.min.js

@@ -11,7 +11,7 @@
                         <TCEforms>
                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:select.mainType</label>
                             <config>
-                                <type>select</type>
+                                <type>input</type>
                                 <renderType>selectSingle</renderType>
                                 <items type="array">
                                     <numIndex index="0" type="array">
@@ -20,6 +20,7 @@
                                     </numIndex>
                                 </items>
                             </config>
+                            <onChange>reload</onChange>
                         </TCEforms>
                     </mainType>
                     <normalVariation>
@@ -34,6 +35,7 @@
                                 <maxitems>1</maxitems>
                                 <eval>required</eval>
                             </config>
+                            <onChange>reload</onChange>
                         </TCEforms>
                     </normalVariation>
                     <dateOpposite>
