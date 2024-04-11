@@ -7,11 +7,7 @@
     <f:render section="content" arguments="{content: content}" />
 
     <f:section name="content">
-        <f:if condition="{content.mainType} == '0'">
-            <f:then>
-                <f:render partial="Standard/{f:format.case(mode: 'capital', value: '{content.normalVariation}')}.html" arguments="{_all}"/>
-            </f:then>
-        </f:if>
+      <f:render partial="Standard/{f:format.case(mode: 'capital', value: '{content.normalVariation}')}.html" arguments="{_all}"/>
     </f:section>
 </div>    
 

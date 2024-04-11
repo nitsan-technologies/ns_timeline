@@ -53,7 +53,7 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
             $mynormalVariation = $flexFormAsArray['data']['sDEF']['lDEF']['normalVariation']['vDEF'];   // Get Standard Type Values
             
 
-            $view = $this->getFluidTemplate($extKey, 'NsTimeline', $chkmaintype, $mynormalVariation);
+            $view = $this->getFluidTemplate($extKey, $mynormalVariation);
             
            
             // Find tx_news_domain_model_news table from database
@@ -124,13 +124,10 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
      * @param string $templateName
      * @return string the fluid template
      */
-    protected function getFluidTemplate($extKey, $templateName, $chkmaintype, $mynormalVariation)
+    protected function getFluidTemplate($extKey, $mynormalVariation)
     {
-        // Call Standard Variation style 1 and 2
-        if($chkmaintype == '0' && $mynormalVariation != '')
-        {
-            $fluidTemplateFile = GeneralUtility::getFileAbsFileName('EXT:' . $extKey . '/Resources/Private/Templates/Backend/' . $mynormalVariation . '.html');            
-        }
+       
+        $fluidTemplateFile = GeneralUtility::getFileAbsFileName('EXT:' . $extKey . '/Resources/Private/Templates/Backend/' . $mynormalVariation . '.html');            
 
         $view = GeneralUtility::makeInstance(StandaloneView::class);
         $view->setTemplatePathAndFilename($fluidTemplateFile);
