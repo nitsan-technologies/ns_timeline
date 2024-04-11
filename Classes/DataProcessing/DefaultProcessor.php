@@ -87,7 +87,7 @@ class DefaultProcessor implements DataProcessorInterface
                 }
             }
         }
-        if($options['mainType'] != '2' || $options['mainType'] == 'TRUE' && $options['section'] != '') {
+        
             if($options['section'] != '') {
                 foreach ($options['section'] as $subdatekey => $datevalue) {
                     $time[$subdatekey] = isset($datevalue['timeFrom']) ? $datevalue['timeFrom'] : '';
@@ -111,7 +111,7 @@ class DefaultProcessor implements DataProcessorInterface
                     }
                 }
             }
-        }
+        
         return $options;
     }
 }
