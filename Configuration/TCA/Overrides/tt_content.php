@@ -1,8 +1,10 @@
 <?php
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 $_EXTKEY = 'ns_timeline';
 // Adds the content element to the "Type" dropdown
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
@@ -15,7 +17,7 @@ $_EXTKEY = 'ns_timeline';
 );
 
 $GLOBALS['TCA']['tt_content']['types']['CType']['subtypes_addlist']['ns_timeline'] = 'pi_flexform';
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+ExtensionManagementUtility::addPiFlexFormValue(
     '*',
     'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/ns_timeline.xml',
     'nstimeline'

@@ -1,20 +1,25 @@
 <?php
+
+use TYPO3\CMS\Core\Imaging\IconRegistry;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Imaging\IconProvider\FontawesomeIconProvider;
+
 // Let's configuration of this extension from "Extension Manager"
 if(isset($_EXTCONF)){
     $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['ns_timeline'] = unserialize($_EXTCONF);
 }
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+ExtensionManagementUtility::addPageTSConfig(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ns_timeline/Configuration/TsConfig/NewContentElement.tsconfig">'
 );
 
-$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+$iconRegistry = GeneralUtility::makeInstance(IconRegistry::class);
 // use same identifier as used in TSconfig for icon
 $iconRegistry->registerIcon(
-   // use same identifier as used in TSconfig for icon
-   'ns_timeline-icon',
-   	\TYPO3\CMS\Core\Imaging\IconProvider\FontawesomeIconProvider::class,
-   // font-awesome identifier ('external-link-square')
+    'ns_timeline-icon',
+   	FontawesomeIconProvider::class,
+   
    ['name' => 'external-link-square']
 );
 

@@ -1,3 +1,8 @@
 <?php
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ns_timeline', 'Configuration/TypoScript', '[NITSAN] Timeline');
+ExtensionManagementUtility::addStaticFile(
+  'ns_timeline',
+  'Configuration/TypoScript',
+  '[NITSAN] Timeline'
+);

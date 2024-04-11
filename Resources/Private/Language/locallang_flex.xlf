@@ -30,10 +30,6 @@
             <trans-unit id="select.timeFormat">
                 <source>Select Time Format</source>
             </trans-unit>
-
-            <trans-unit id="details.pid">
-                <source>PageId for single news display</source>
-            </trans-unit>
             <trans-unit id="order.by">
                 <source>Order By</source>
             </trans-unit>
@@ -83,9 +79,6 @@
             </trans-unit>
             <trans-unit id="listing.eventStyles">
                 <source>Select Event Variation</source>
-            </trans-unit>
-            <trans-unit id="listing.newsStyles">
-                <source>Select News Variation</source>
             </trans-unit>
             <trans-unit id="select.mainType">
                 <source>Select Type</source>
