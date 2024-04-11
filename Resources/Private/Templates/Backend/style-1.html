@@ -5,7 +5,7 @@
 
 <div class="frst-container {f:if(condition: '{flexformData.alignment} == 0', then: 'content-alternate', else: '{f:if(condition:\'{flexformData.alignment} == 2\', then:\'content-left-align\', else:\'content-right-align\')}')}">
 
-    <div class="frst-timeline frst-timeline-{f:if(condition: '{flexformData.mainType} == 0', then: '{flexformData.normalVariation}')}{f:if(condition: '{flexformData.mainType} == 1', then: '{flexformData.eventVariation}')}{f:if(condition: '{flexformData.mainType} == 2', then: '{flexformData.newsVariation}')} {f:if(condition: '{flexformData.alignment} == 0', then: 'frst-alternate', else: '{f:if(condition:\'{flexformData.alignment} == 2\', then:\'frst-left-align\', else:\'frst-right-align\')}')} timeline-theme--{f:if(condition: '{flexformData.selectTheme}', then: '{flexformData.selectTheme}')}" style="max-height: max-content;">
+    <div class="frst-timeline frst-timeline-{f:if(condition: '{flexformData.mainType} == 0', then: '{flexformData.normalVariation}')}{f:if(condition: '{flexformData.alignment} == 0', then: 'frst-alternate', else: '{f:if(condition:\'{flexformData.alignment} == 2\', then:\'frst-left-align\', else:\'frst-right-align\')}')} timeline-theme--{f:if(condition: '{flexformData.selectTheme}', then: '{flexformData.selectTheme}')}" style="max-height: max-content;">
 
     	<link href="{f:uri.resource(path:'css/frst-timeline-style-1.css', extensionName: 'ns_timeline')}" rel="stylesheet" />
         <div class="container">

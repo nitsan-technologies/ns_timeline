@@ -20,20 +20,16 @@ final class NewContentElementPreviewRenderer
             $drawItem = false;
             $headerContent = '';
 
-            // template
-            //$view = $this->getFluidTemplate($extKey, 'NsTimeline');
-
             if (!empty($row['pi_flexform'])) {
                 /** @var FlexFormService $flexFormService */
-                $flexFormService = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Service\FlexFormService::class);
+                $flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
             }
 
             $options = [];
             $flexFormAsArray = GeneralUtility::xml2array($row['pi_flexform']);
-            $chkmaintype = $flexFormAsArray['data']['sDEF']['lDEF']['mainType']['vDEF'];   // Get Maintype Value
             $mynormalVariation = $flexFormAsArray['data']['sDEF']['lDEF']['normalVariation']['vDEF'];   // Get Standard Type Values
 
-            $view = $this->getFluidTemplate($extKey, 'NsTimeline', $chkmaintype, $mynormalVariation);
+            $view = $this->getFluidTemplate($extKey, $mynormalVariation);
 
             // If Table Found Then....
             if (isset($flexFormAsArray['data']) && is_array($flexFormAsArray['data'])) {
@@ -86,7 +82,6 @@ final class NewContentElementPreviewRenderer
             // return the preview
             $event->setPreviewContent($view->render());
 
-            // $itemContent = $parentObject->linkEditContent($view->render(), $row);
 
         }
     }
@@ -95,13 +90,11 @@ final class NewContentElementPreviewRenderer
      * @param string $extKey
      * @param string $templateName
      */
-    protected function getFluidTemplate($extKey, $templateName, $chkmaintype, $mynormalVariation)
+    protected function getFluidTemplate($extKey, $mynormalVariation)
     {
-        $fluidTemplateFile =[];
-        // Call Standard Variation style 1 to 7
-        if ($chkmaintype == '0' && $mynormalVariation != '') {
-            $fluidTemplateFile = GeneralUtility::getFileAbsFileName('EXT:' . $extKey . '/Resources/Private/Templates/Backend/' . $mynormalVariation . '.html');
-        }
+        $fluidTemplateFile = [];
+
+        $fluidTemplateFile = GeneralUtility::getFileAbsFileName('EXT:' . $extKey . '/Resources/Private/Templates/Backend/' . $mynormalVariation . '.html');
 
         $view = GeneralUtility::makeInstance(StandaloneView::class);
         $view->setTemplatePathAndFilename($fluidTemplateFile);

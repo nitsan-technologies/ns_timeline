@@ -6,13 +6,13 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 use TYPO3\CMS\Frontend\ContentObject\Exception\ContentRenderingException;
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 /**
  * Deafult processor
  */
 class DefaultProcessor implements DataProcessorInterface
 {
-
     /**
      * Process data
      *
@@ -34,7 +34,7 @@ class DefaultProcessor implements DataProcessorInterface
         return $processedData;
     }
 
-    protected $defaultOrderings = ['crdate' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_DESCENDING];
+    protected $defaultOrderings = ['crdate' => QueryInterface::ORDER_DESCENDING];
 
     /**
      * @param array $row
@@ -47,7 +47,8 @@ class DefaultProcessor implements DataProcessorInterface
         if (isset($flexFormAsArray['data']) && is_array($flexFormAsArray['data'])) {
             foreach ($flexFormAsArray['data'] as $base) {
                 if (!empty($base['lDEF']) && is_array($base['lDEF'])) {
-                    foreach ($base['lDEF'] as $optionKey => $optionValue) { {
+                    foreach ($base['lDEF'] as $optionKey => $optionValue) {
+                        {
                             $optionParts = GeneralUtility::trimExplode('.', $optionKey);
                             $optionKey = array_pop($optionParts);
                             if (isset($optionValue['el']) && is_array($optionValue['el'])) {
@@ -82,6 +83,31 @@ class DefaultProcessor implements DataProcessorInterface
                                 $options[$optionKey] = $optionValue['vDEF'] === '1' ? true : $optionValue['vDEF'];
                             }
                         }
+                    }
+                }
+            }
+        }
+        if($options['mainType'] != '2' || $options['mainType'] == 'TRUE' && $options['section'] != '') {
+            if($options['section'] != '') {
+                foreach ($options['section'] as $subdatekey => $datevalue) {
+                    $time[$subdatekey] = isset($datevalue['timeFrom']) ? $datevalue['timeFrom'] : '';
+                    $date[$subdatekey] = $datevalue['date'];
+                }
+
+                if(!empty($datevalue['date'])) {
+                    $date  = array_column($options['section'], 'date');
+                    $options['newsOrderDirection'] = isset($options['newsOrderDirection']) ? $options['newsOrderDirection'] : 'asc';
+                    if ($options['newsOrderDirection'] == 'asc') {
+                        array_multisort($date, SORT_ASC, $options['section']);
+                    } else {
+                        array_multisort($date, SORT_DESC, $options['section']);
+                    }
+                } elseif(!empty($datevalue['timeFrom'])) {
+                    $time  = array_column($options['section'], 'timeFrom');
+                    if ($options['newsOrderDirection'] == 'asc') {
+                        array_multisort($time, SORT_ASC, $options['section']);
+                    } else {
+                        array_multisort($time, SORT_DESC, $options['section']);
                     }
                 }
             }
