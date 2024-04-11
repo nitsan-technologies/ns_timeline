@@ -35,7 +35,3 @@ $GLOBALS['TCA']['tt_content']['types']['nstimeline'] = [
         --palette--;LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_db.xlf:palette.access;access,
     ',
 ];
-
-
-
-

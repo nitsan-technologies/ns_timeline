@@ -29,9 +29,10 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
         &$headerContent,
         &$itemContent,
         array &$row
-    ) {
+    )
+    {
         $extKey = 'ns_timeline';
-        
+
         if ($row['CType'] === 'nstimeline') {
 
             $drawItem = false;
@@ -39,83 +40,82 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
 
 
             if (!empty($row['pi_flexform'])) {
-                 /** @var FlexFormService $flexFormService */
-                 if (version_compare(TYPO3_branch, '9.0', '>')) {
-                     $flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
-                 } else {
-                     $flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
-                 } 
+                /** @var FlexFormService $flexFormService */
+                if (version_compare(TYPO3_branch, '9.0', '>')) {
+                    $flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
+                } else {
+                    $flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
+                }
             }
 
             $options = [];
             $flexFormAsArray = GeneralUtility::xml2array($row['pi_flexform']);
-            $chkmaintype = $flexFormAsArray['data']['sDEF']['lDEF']['mainType']['vDEF'];   // Get Maintype Value
             $mynormalVariation = $flexFormAsArray['data']['sDEF']['lDEF']['normalVariation']['vDEF'];   // Get Standard Type Values
-            
+
 
             $view = $this->getFluidTemplate($extKey, $mynormalVariation);
+
+
             
-           
-            // Find tx_news_domain_model_news table from database
             $maintype = $flexFormAsArray['data']['sDEF']['lDEF']['mainType']['vDEF'];   // Get MaiType Value From Custom Element
 
-          
-                // If Table Found Then....
-                if (isset($flexFormAsArray['data']) && is_array($flexFormAsArray['data'])) {
-                    foreach ($flexFormAsArray['data'] as $base) {
-                        if (!empty($base['lDEF']) && is_array($base['lDEF'])) {
-                            foreach ($base['lDEF'] as $optionKey => $optionValue) {
 
-                                // Check Condition For News
-                                $orderingByData = isset($base['lDEF']['newsOrderBy']['vDEF']) ? $base['lDEF']['newsOrderBy']['vDEF'] : null;
-                                $orderingDirectionData = isset($base['lDEF']['newsOrderDirection']['vDEF']) ? $base['lDEF']['newsOrderDirection']['vDEF'] : null;
-                              
-                               
-                                    $optionParts = explode('.', $optionKey);
-                                    $optionKey = array_pop($optionParts);
-                                    if (isset($optionValue['el']) && is_array($optionValue['el'])) {
-                                        foreach ($optionValue['el'] as $subprekey => $subArrayItem) {
-                                            foreach ($subArrayItem as $subsubArrayItem) {
-                                                if (isset($subsubArrayItem['el'])) {
-                                                    foreach ($subsubArrayItem['el'] as $subkey => $value) {
+            // If Table Found Then....
+            if (isset($flexFormAsArray['data']) && is_array($flexFormAsArray['data'])) {
+                foreach ($flexFormAsArray['data'] as $base) {
+                    if (!empty($base['lDEF']) && is_array($base['lDEF'])) {
+                        foreach ($base['lDEF'] as $optionKey => $optionValue) {
 
-                                                        // Convert Multiple Images to Array
-                                                        if(isset($subsubArrayItem['el']['image']['vDEF'])){
-                                                            $options['sectionimages'] = explode(',', $subsubArrayItem['el']['image']['vDEF']);
-                                                        }
+                            // Check Condition For News
+                            $orderingByData = isset($base['lDEF']['newsOrderBy']['vDEF']) ? $base['lDEF']['newsOrderBy']['vDEF'] : null;
+                            $orderingDirectionData = isset($base['lDEF']['newsOrderDirection']['vDEF']) ? $base['lDEF']['newsOrderDirection']['vDEF'] : null;
 
-                                                        $options[$optionKey] = isset($options[$optionKey]) ? $options[$optionKey] : [];
-                                                        if (!is_array($options[$optionKey])) {
-                                                            $options[$optionKey] = [];
-                                                        }
 
-                                                        $options[$optionKey][$subprekey] = isset($options[$optionKey][$subprekey]) ? $options[$optionKey][$subprekey] : [];
-                                                        if (!is_array($options[$optionKey][$subprekey])) {
-                                                            $options[$optionKey][$subprekey] = [];
-                                                        }
-                                                        
-                                                        // Add Images Array to Main Array
-                                                        $options[$optionKey][$subprekey][$subkey] = $value['vDEF'];
-                                                        $options[$optionKey][$subprekey]['image'] = isset($options['sectionimages']) ? $options['sectionimages'] : '';
-                                                    }
+                            $optionParts = explode('.', $optionKey);
+                            $optionKey = array_pop($optionParts);
+                            if (isset($optionValue['el']) && is_array($optionValue['el'])) {
+                                foreach ($optionValue['el'] as $subprekey => $subArrayItem) {
+                                    foreach ($subArrayItem as $subsubArrayItem) {
+                                        if (isset($subsubArrayItem['el'])) {
+                                            foreach ($subsubArrayItem['el'] as $subkey => $value) {
+
+                                                // Convert Multiple Images to Array
+                                                if(isset($subsubArrayItem['el']['image']['vDEF'])) {
+                                                    $options['sectionimages'] = explode(',', $subsubArrayItem['el']['image']['vDEF']);
                                                 }
+
+                                                $options[$optionKey] = isset($options[$optionKey]) ? $options[$optionKey] : [];
+                                                if (!is_array($options[$optionKey])) {
+                                                    $options[$optionKey] = [];
+                                                }
+
+                                                $options[$optionKey][$subprekey] = isset($options[$optionKey][$subprekey]) ? $options[$optionKey][$subprekey] : [];
+                                                if (!is_array($options[$optionKey][$subprekey])) {
+                                                    $options[$optionKey][$subprekey] = [];
+                                                }
+
+                                                // Add Images Array to Main Array
+                                                $options[$optionKey][$subprekey][$subkey] = $value['vDEF'];
+                                                $options[$optionKey][$subprekey]['image'] = isset($options['sectionimages']) ? $options['sectionimages'] : '';
                                             }
                                         }
-                                    } else {
-                                        $options[$optionKey] = $optionValue['vDEF'] === '1' ? true : $optionValue['vDEF'];
                                     }
-                                
+                                }
+                            } else {
+                                $options[$optionKey] = $optionValue['vDEF'] === '1' ? true : $optionValue['vDEF'];
                             }
+
                         }
                     }
                 }
+            }
 
-                // assign all to view
-                $view->assignMultiple(['flexformData' => $options]);
+            // assign all to view
+            $view->assignMultiple(['flexformData' => $options]);
 
-                // return the preview
-                $itemContent = $parentObject->linkEditContent($view->render(), $row);
-            
+            // return the preview
+            $itemContent = $parentObject->linkEditContent($view->render(), $row);
+
         }
     }
 
@@ -126,8 +126,8 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
      */
     protected function getFluidTemplate($extKey, $mynormalVariation)
     {
-       
-        $fluidTemplateFile = GeneralUtility::getFileAbsFileName('EXT:' . $extKey . '/Resources/Private/Templates/Backend/' . $mynormalVariation . '.html');            
+
+        $fluidTemplateFile = GeneralUtility::getFileAbsFileName('EXT:' . $extKey . '/Resources/Private/Templates/Backend/' . $mynormalVariation . '.html');
 
         $view = GeneralUtility::makeInstance(StandaloneView::class);
         $view->setTemplatePathAndFilename($fluidTemplateFile);

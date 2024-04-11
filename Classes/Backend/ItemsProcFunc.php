@@ -1,22 +1,22 @@
 <?php
+
 namespace NITSAN\NsTimeline\Backend;
 
 class ItemsProcFunc
 {
-
-      /**
-      * Modifies the Styles list options.
-      *
-      * @param array &$config configuration array
-      */
-      public function getNormalStylesList(array &$config)
-      {
-            // change this to dynamically populate the list!
-            $config['items'] = [
-                  ['Style 01', 'style-1'],
-                  ['Style 02', 'style-2'],
-            ];
-      }
+    /**
+    * Modifies the Styles list options.
+    *
+    * @param array &$config configuration array
+    */
+    public function getNormalStylesList(array &$config)
+    {
+        // change this to dynamically populate the list!
+        $config['items'] = [
+              ['Style 01', 'style-1'],
+              ['Style 02', 'style-2'],
+        ];
+    }
 
     /**
     * Modifies the icon list options.

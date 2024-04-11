@@ -44,9 +44,7 @@
                             </span>
                         </f:then>
                         <f:else>
-                            
-                              
-                                    <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
+                                   <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
                                         <f:then>
                                             <span style="background: {f:cObject(typoscriptObjectPath: 'lib.themeColor')}"></span>
                                         </f:then>
@@ -54,8 +52,6 @@
                                             <span style="background: {content.themeColor}"></span>
                                         </f:else>
                                     </f:if>
-                                
-                         
                         </f:else>    
                     </f:if>    
                 </div>
