@@ -2,12 +2,10 @@
 
 namespace NITSAN\NsTimeline\Hooks;
 
-use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Backend\View\PageLayoutView;
 use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
-use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Service\FlexFormService;
 
 class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInterface
@@ -29,8 +27,7 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
         &$headerContent,
         &$itemContent,
         array &$row
-    )
-    {
+    ) {
         $extKey = 'ns_timeline';
 
         if ($row['CType'] === 'nstimeline') {
@@ -56,7 +53,7 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
             $view = $this->getFluidTemplate($extKey, $mynormalVariation);
 
 
-            
+
             $maintype = $flexFormAsArray['data']['sDEF']['lDEF']['mainType']['vDEF'];   // Get MaiType Value From Custom Element
 
 
@@ -122,7 +119,7 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
     /**
      * @param string $extKey
      * @param string $templateName
-     * @return string the fluid template
+     * @return StandaloneView
      */
     protected function getFluidTemplate($extKey, $mynormalVariation)
     {
