@@ -53,10 +53,6 @@ class NewContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInte
             $view = $this->getFluidTemplate($extKey, $mynormalVariation);
 
 
-
-            $maintype = $flexFormAsArray['data']['sDEF']['lDEF']['mainType']['vDEF'];   // Get MaiType Value From Custom Element
-
-
             // If Table Found Then....
             if (isset($flexFormAsArray['data']) && is_array($flexFormAsArray['data'])) {
                 foreach ($flexFormAsArray['data'] as $base) {

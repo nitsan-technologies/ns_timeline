@@ -1,11 +1,8 @@
-<f:if condition="{flexformData.mainType} == '0' && {flexformData.normalVariation}">
-    <h2><b>[{flexformData.normalVariation}]</b></h2>
-</f:if>
+<h2><b>[{flexformData.normalVariation}]</b></h2>
 <br>
-
 <div class="frst-container {f:if(condition: '{flexformData.alignment} == 0', then: 'content-alternate', else: '{f:if(condition:\'{flexformData.alignment} == 2\', then:\'content-left-align\', else:\'content-right-align\')}')}">
 
-    <div class="frst-timeline frst-timeline-{f:if(condition: '{flexformData.mainType} == 0', then: '{flexformData.normalVariation}')}">
+    <div class="frst-timeline frst-timeline-style-1">
 
     	<link href="{f:uri.resource(path:'css/frst-timeline-style-1.css', extensionName: 'ns_timeline')}" rel="stylesheet" />
         <div class="container">

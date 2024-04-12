@@ -80,15 +80,7 @@
             <trans-unit id="listing.eventStyles">
                 <source>Select Event Variation</source>
             </trans-unit>
-            <trans-unit id="select.mainType">
-                <source>Select Type</source>
-            </trans-unit>
-            <trans-unit id="normal.type">
-                <source>Standard</source>
-            </trans-unit>
-            <trans-unit id="event.type">
-                <source>Event</source>
-            </trans-unit>
+
             
             <trans-unit id="animation.listing">
                 <source>Select Animation</source>
