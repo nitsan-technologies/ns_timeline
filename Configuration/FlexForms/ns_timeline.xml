@@ -19,6 +19,7 @@
                                 <maxitems>1</maxitems>
                                 <eval>required</eval>
                             </config>
+                            <onChange>reload</onChange>
                         </TCEforms>
                     </normalVariation>
                     <dateOpposite>
