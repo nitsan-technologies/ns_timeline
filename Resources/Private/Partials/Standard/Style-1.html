@@ -12,22 +12,15 @@
                 <f:if condition="{f:format.date(date: oldDate, format: 'Y')} != {f:format.date(date: newContent.date, format: 'Y')}">
                     <div class="frst-timeline-block frst-timeline-label-block" data-animation="{f:if(condition: '{content.animationslist}', then: '{content.animationslist}', else: 'slideInUp')}">
                         <div class="frst-labels frst-start-label">
-                            <f:if condition="{content.selectTheme} == 'default'">
+                            <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
                                 <f:then>
-                                    <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
-                                        <f:then>
-                                            <span style="background: {f:cObject(typoscriptObjectPath: 'lib.themeColor')}">
-                                        </f:then>
-                                        <f:else>
-                                            <span style="background: {content.themeColor}">
-                                        </f:else>
-                                    </f:if>
+                                    <span style="background: {f:cObject(typoscriptObjectPath: 'lib.themeColor')}">
                                 </f:then>
                                 <f:else>
-                                    <span>
+                                    <span style="background: {content.themeColor}">
                                 </f:else>
-                            </f:if>
-                                <f:format.date format="Y">{newContent.date}</f:format.date>
+                            </f:if>                            
+                            <f:format.date format="Y">{newContent.date}</f:format.date>
                             </span>
                         </div>
                     </div>
@@ -38,8 +31,7 @@
                 <div class="frst-timeline-img">
                     <f:if condition="{newContent.customIcon}">
                         <f:then>
-                            <f:if condition="{content.selectTheme} == 'default'">
-                                <f:then>
+                           
                                     <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
                                         <f:then>
                                             <span style="background: {f:cObject(typoscriptObjectPath: 'lib.themeColor')}">
@@ -47,19 +39,12 @@
                                         <f:else>
                                             <span style="background: {content.themeColor}">
                                         </f:else>
-                                    </f:if>
-                                </f:then>
-                                <f:else>
-                                    <span>
-                                </f:else>
-                            </f:if>
+                        </f:if>
                                 <i class="fa {newContent.customIcon}" aria-hidden="true"></i>
                             </span>
                         </f:then>
                         <f:else>
-                            <f:if condition="{content.selectTheme} == 'default'">
-                                <f:then>
-                                    <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
+                                   <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
                                         <f:then>
                                             <span style="background: {f:cObject(typoscriptObjectPath: 'lib.themeColor')}"></span>
                                         </f:then>
@@ -67,11 +52,6 @@
                                             <span style="background: {content.themeColor}"></span>
                                         </f:else>
                                     </f:if>
-                                </f:then>
-                                <f:else>
-                                    <span></span>
-                                </f:else>
-                            </f:if>
                         </f:else>    
                     </f:if>    
                 </div>
@@ -90,7 +70,7 @@
                                 </f:then>
                                 <f:else>
                                     <span class="frst-date">
-                                        <f:format.date format="d, F">{newContent.date}</f:format.date>
+                                        <f:format.date format="d, F Y">{newContent.date}</f:format.date>
                                     </span>
                                 </f:else>
                             </f:if>
@@ -102,44 +82,7 @@
                 </div>
             </div>
             <f:variable name="oldDate" value="{newContent.date}" />
-            <f:if condition="{newContent.backgroundColor}">
-                <f:then>
-                    <input type="hidden" name="theId" value="{newContent.backgroundColor}" />
-                    <f:variable name="theName" value="{newContent.backgroundColor}"/>
-                    <script>
-                        $(document).ready(function(){
-                            var myDemoJSObject = "<style>.frst-timeline-style-1.frst-alternate .frst-odd-item .frst-timeline-content-inner::after{ border-left-color: ";
-                            myDemoJSObject += document.querySelector("input[name='theId']").value;
-                            myDemoJSObject += " }</style>";
-                            $('.frst-timeline-style-1.frst-alternate .frst-odd-item .frst-timeline-content-inner').append(myDemoJSObject);
-                        });
-                    </script>
-                    <script>
-                        $(document).ready(function(){
-                            var myDemoJSObject = "<style>.frst-timeline-style-1.frst-alternate .frst-odd-item .frst-timeline-content-inner::before{ border-left-color: ";
-                            myDemoJSObject += document.querySelector("input[name='theId']").value;
-                            myDemoJSObject += " }</style>";
-                            $('.frst-timeline-style-1.frst-alternate .frst-odd-item .frst-timeline-content-inner').append(myDemoJSObject);
-                        });
-                    </script>
-                    <script>
-                        $(document).ready(function(){
-                            var myDemoJSObject = "<style>.frst-timeline-style-1 .frst-timeline-content-inner::after{ border-right-color: ";
-                            myDemoJSObject += document.querySelector("input[name='theId']").value;
-                            myDemoJSObject += " }</style>";
-                            $('.frst-timeline-style-1 .frst-timeline-block frst-even-item .frst-timeline-content-inner').append(myDemoJSObject);
-                        });
-                    </script>
-                    <script>
-                        $(document).ready(function(){
-                            var myDemoJSObject = "<style>.frst-timeline-style-1 .frst-timeline-content-inner::before{ border-right-color: ";
-                            myDemoJSObject += document.querySelector("input[name='theId']").value;
-                            myDemoJSObject += " }</style>";
-                            $('.frst-timeline-style-1 .frst-timeline-content-inner').append(myDemoJSObject);
-                        });
-                    </script>
-                </f:then>
-            </f:if>
+           
         </f:for>
     </div>
 </div>

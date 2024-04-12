@@ -7,17 +7,7 @@
     <f:render section="content" arguments="{content: content}" />
 
     <f:section name="content">
-        <f:if condition="{content.mainType} == '0'">
-            <f:then>
-                <f:render partial="Standard/{f:format.case(mode: 'capital', value: '{content.normalVariation}')}.html" arguments="{_all}"/>
-            </f:then>
-            <f:else if="{content.mainType} == '1'">
-                <f:render partial="Event/{f:format.case(mode: 'capital', value: '{content.eventVariation}')}.html" arguments="{_all}"/>
-            </f:else>
-            <f:else>
-                <f:render partial="NewsStyles/{f:format.case(mode: 'capital', value: '{content.newsVariation}')}.html" arguments="{_all}"/>    
-            </f:else>
-        </f:if>
+      <f:render partial="Standard/{f:format.case(mode: 'capital', value: '{content.normalVariation}')}.html" arguments="{_all}"/>
     </f:section>
 </div>    
 
