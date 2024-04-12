@@ -87,7 +87,7 @@ class DefaultProcessor implements DataProcessorInterface
         }
 
         // Apply Sorting Based On Date....
-        if($options['section'] != '') {
+        if(isset($options['section'])) {
             foreach ($options['section'] as $subdatekey => $datevalue) {
                 $time[$subdatekey] = isset($datevalue['timeFrom']) ? $datevalue['timeFrom'] : '';
                 $date[$subdatekey] = $datevalue['date'];
