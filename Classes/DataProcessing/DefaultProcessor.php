@@ -87,31 +87,31 @@ class DefaultProcessor implements DataProcessorInterface
                 }
             }
         }
-        
-            if($options['section'] != '') {
-                foreach ($options['section'] as $subdatekey => $datevalue) {
-                    $time[$subdatekey] = isset($datevalue['timeFrom']) ? $datevalue['timeFrom'] : '';
-                    $date[$subdatekey] = $datevalue['date'];
-                }
 
-                if(!empty($datevalue['date'])) {
-                    $date  = array_column($options['section'], 'date');
-                    $options['newsOrderDirection'] = isset($options['newsOrderDirection']) ? $options['newsOrderDirection'] : 'asc';
-                    if ($options['newsOrderDirection'] == 'asc') {
-                        array_multisort($date, SORT_ASC, $options['section']);
-                    } else {
-                        array_multisort($date, SORT_DESC, $options['section']);
-                    }
-                } elseif(!empty($datevalue['timeFrom'])) {
-                    $time  = array_column($options['section'], 'timeFrom');
-                    if ($options['newsOrderDirection'] == 'asc') {
-                        array_multisort($time, SORT_ASC, $options['section']);
-                    } else {
-                        array_multisort($time, SORT_DESC, $options['section']);
-                    }
+        if($options['section'] != '') {
+            foreach ($options['section'] as $subdatekey => $datevalue) {
+                $time[$subdatekey] = isset($datevalue['timeFrom']) ? $datevalue['timeFrom'] : '';
+                $date[$subdatekey] = $datevalue['date'];
+            }
+
+            if(!empty($datevalue['date'])) {
+                $date  = array_column($options['section'], 'date');
+                $options['newsOrderDirection'] = isset($options['newsOrderDirection']) ? $options['newsOrderDirection'] : 'asc';
+                if ($options['newsOrderDirection'] == 'asc') {
+                    array_multisort($date, SORT_ASC, $options['section']);
+                } else {
+                    array_multisort($date, SORT_DESC, $options['section']);
+                }
+            } elseif(!empty($datevalue['timeFrom'])) {
+                $time  = array_column($options['section'], 'timeFrom');
+                if ($options['newsOrderDirection'] == 'asc') {
+                    array_multisort($time, SORT_ASC, $options['section']);
+                } else {
+                    array_multisort($time, SORT_DESC, $options['section']);
                 }
             }
-        
+        }
+
         return $options;
     }
 }

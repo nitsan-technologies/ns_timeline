@@ -88,7 +88,7 @@ final class NewContentElementPreviewRenderer
 
     /**
      * @param string $extKey
-     * @param string $templateName
+     * @return StandaloneView
      */
     protected function getFluidTemplate($extKey, $mynormalVariation)
     {
