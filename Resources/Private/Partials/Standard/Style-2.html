@@ -10,8 +10,7 @@
         <f:for each="{content.section}" as="newContent" iteration="iterator">
             <div class="frst-timeline-block frst-{f:if(condition: '{iterator.isOdd}', then: 'odd', else: 'even')}-item" data-animation="{f:if(condition: '{content.animationslist}', then: '{content.animationslist}', else: 'slideInUp')}">
                 <div class="frst-timeline-img">
-                    <f:if condition="{content.selectTheme} == 'default'">
-                        <f:then>
+                    
                             <f:if condition="({content.themeColor} == '') && {f:cObject(typoscriptObjectPath: 'lib.enableThemeColor')}">
                                 <f:then>
                                     <span style="background: {f:cObject(typoscriptObjectPath: 'lib.themeColor')}"></span>
@@ -20,11 +19,7 @@
                                     <span style="background: {content.themeColor}"></span>
                                 </f:else>
                             </f:if>
-                        </f:then>
-                        <f:else>
-                            <span></span>
-                        </f:else>
-                    </f:if>
+                       
                 </div>
                 <!-- frst-timeline-img -->
                 <div class="frst-timeline-content">
@@ -37,7 +32,7 @@
                             </f:then>
                             <f:else>
                                 <span class="frst-date">
-                                    <f:format.date format="d, F">{newContent.date}</f:format.date>
+                                    <f:format.date format="d, F Y">{newContent.date}</f:format.date>
                                 </span>
                             </f:else>
                         </f:if>

@@ -7,21 +7,6 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
-                    <mainType>
-                        <TCEforms>
-                            <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:select.mainType</label>
-                            <config>
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <items type="array">
-                                    <numIndex index="0" type="array">
-                                        <numIndex index="0">Standard</numIndex>
-                                        <numIndex index="1">0</numIndex>
-                                    </numIndex>
-                                </items>
-                            </config>
-                        </TCEforms>
-                    </mainType>
                     <normalVariation>
                         <TCEforms>
                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:listing.normalStyles</label>
@@ -34,6 +19,7 @@
                                 <maxitems>1</maxitems>
                                 <eval>required</eval>
                             </config>
+                            <onChange>reload</onChange>
                         </TCEforms>
                     </normalVariation>
                     <dateOpposite>
@@ -87,14 +73,6 @@
                                                 <size>30</size>
                                                 <eval>trim</eval>
                                                 <softref>typolink,typolink_tag,images,url</softref>
-                                                <fieldControl>
-                                                    <linkPopup>
-                                                        <options>
-                                                            <!--<blindLinkOptions>file,mail,page,spec,url</blindLinkOptions>-->
-                                                            <!--<blindLinkFields>class,params,target,title</blindLinkFields>-->
-                                                        </options>
-                                                    </linkPopup>
-                                                </fieldControl>
                                             </config>
                                         </TCEforms>
                                     </link>
@@ -105,7 +83,7 @@
                                                 <type>input</type>
                                                 <renderType>inputDateTime</renderType>
                                                 <size>20</size>
-                                                <eval>date</eval>
+                                                <eval>date,required</eval>
                                             </config>
                                         </TCEforms>
                                     </date>
