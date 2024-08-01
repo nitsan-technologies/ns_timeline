@@ -12,6 +12,8 @@ ExtensionManagementUtility::addTcaSelectItem(
         'LLL:EXT:ns_timeline/Resources/Private/Language/locallang_db.xlf:wizard.ns_timeline',
         'nstimeline',
         'ns_timeline-icon',
+        'nstimeline'
+
     ],
     'textmedia',
     'after'
