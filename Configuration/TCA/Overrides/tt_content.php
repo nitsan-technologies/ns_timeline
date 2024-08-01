@@ -17,7 +17,6 @@ ExtensionManagementUtility::addTcaSelectItem(
     'after'
 );
 
-$GLOBALS['TCA']['tt_content']['types']['CType']['subtypes_addlist']['ns_timeline'] = 'pi_flexform';
 ExtensionManagementUtility::addPiFlexFormValue(
     '*',
     'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/ns_timeline.xml',
@@ -36,3 +35,4 @@ $GLOBALS['TCA']['tt_content']['types']['nstimeline'] = [
         --palette--;LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_db.xlf:palette.access;access,
     ',
 ];
+

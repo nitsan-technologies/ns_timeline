@@ -2,13 +2,13 @@
     <sheets>
         <sDEF>
             <ROOT>
-                <TCEforms>
+               
                     <sheetTitle>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:function</sheetTitle>
-                </TCEforms>
+                
                 <type>array</type>
                 <el>
                     <normalVariation>
-                        <TCEforms>
+                       
                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:listing.normalStyles</label>
                             <config>
                                 <type>select</type>
@@ -20,16 +20,16 @@
                                 <eval>required</eval>
                             </config>
                             <onChange>reload</onChange>
-                        </TCEforms>
+                       
                     </normalVariation>
                     <dateOpposite>
-                        <TCEforms type="array">
+                       
                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:date.opposite</label>
                             <config>
                                 <type>check</type>
                                 <default>1</default>
                             </config>
-                        </TCEforms>
+                       
                     </dateOpposite>
                     <section>
                         <section>1</section>
@@ -42,17 +42,17 @@
                                 <type>array</type>
                                 <el>
                                     <title>
-                                        <TCEforms>
+                                      
                                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:general.title</label>
                                             <config>
                                                 <type>input</type>
                                                 <size>30</size>
                                                 <eval>trim,required</eval>
                                             </config>
-                                        </TCEforms>
+                                        
                                     </title>
                                     <text>
-                                        <TCEforms>
+                                       
                                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:general.text</label>
                                             <config>
                                                 <type>text</type>
@@ -62,10 +62,10 @@
                                                 <enableRichtext>1</enableRichtext>
                                                 <richtextConfiguration>default</richtextConfiguration>
                                             </config>
-                                        </TCEforms>
+                                        
                                     </text>
                                     <link>
-                                        <TCEforms>
+                                       
                                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:general.link</label>
                                             <config>
                                                 <type>input</type>
@@ -74,10 +74,10 @@
                                                 <eval>trim</eval>
                                                 <softref>typolink,typolink_tag,images,url</softref>
                                             </config>
-                                        </TCEforms>
+                                       
                                     </link>
                                     <date>
-                                        <TCEforms>
+                                       
                                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:select.date</label>
                                             <config>
                                                 <type>input</type>
@@ -85,10 +85,10 @@
                                                 <size>20</size>
                                                 <eval>date,required</eval>
                                             </config>
-                                        </TCEforms>
+                                        
                                     </date>
                                     <customIcon>
-                                        <TCEforms>
+                                       
                                             <label>LLL:EXT:ns_timeline/Resources/Private/Language/locallang_flex.xlf:timeline.icon</label>
                                             <displayCond>FIELD:normalVariation:!=:style-2</displayCond>
                                             <config>
@@ -99,7 +99,7 @@
                                                 <minitems>1</minitems>
                                                 <maxitems>1</maxitems>
                                             </config>
-                                        </TCEforms>
+                                       
                                     </customIcon>
                                 </el>
                             </container>
