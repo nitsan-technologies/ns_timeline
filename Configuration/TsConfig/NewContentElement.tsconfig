@@ -1,5 +1,4 @@
-mod.wizards.newContentElement.wizardItems.common {
-    icon = 
+mod.wizards.newContentElement.wizardItems.default {
     elements {
         nstimeline {
             iconIdentifier = ns_timeline-icon

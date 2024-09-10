@@ -1,12 +1,12 @@
-.timeline *,
-.timeline *::after,
-.timeline *::before {
+.ns-timeline *,
+.ns-timeline *::after,
+.ns-timeline *::before {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.timeline a {
+.ns-timeline a {
     color: #6f6f6f;
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
@@ -16,12 +16,11 @@
     transition: all 0.3s ease;
 }
 
-.timeline {
+.ns-timeline {
     font-family: 'Titillium Web', sans-serif;
     font-size: 14px;
     margin: 0;
-    padding: 0;
-    padding-top: 130px;
+    padding-top: 10px;
     /*background: #EAEDED;*/
 }
 
