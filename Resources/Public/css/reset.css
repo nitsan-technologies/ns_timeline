@@ -239,7 +239,7 @@
  * Hide the overflow in IE.
  */
 
-vsvg:not(:root) {
+:not(:root) {
   overflow: hidden;
 }
 
