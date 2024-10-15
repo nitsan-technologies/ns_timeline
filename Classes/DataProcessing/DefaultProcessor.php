@@ -88,7 +88,7 @@ class DefaultProcessor implements DataProcessorInterface
             }
         }
 
-        if($options['section'] != '') {
+        if(isset($options['section']) != '') {
             foreach ($options['section'] as $subdatekey => $datevalue) {
                 $time[$subdatekey] = isset($datevalue['timeFrom']) ? $datevalue['timeFrom'] : '';
                 $date[$subdatekey] = $datevalue['date'];
