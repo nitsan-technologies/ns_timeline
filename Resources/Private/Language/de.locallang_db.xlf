@@ -5,19 +5,19 @@
     <body>
       <trans-unit id="palette.access">
         <source>Access</source>
-        <target state="needs-translation">Access</target>
+        <target state="translated">Zugriff</target>
       </trans-unit>
       <trans-unit id="headline">
         <source>Headline</source>
-        <target state="needs-translation">Headline</target>
+        <target state="translated">Überschrift</target>
       </trans-unit>
       <trans-unit id="wizard.ns_timeline">
         <source>Timeline</source>
-        <target state="needs-translation">Timeline</target>
+        <target state="translated">Timeline</target>
       </trans-unit>
       <trans-unit id="wizard.ns_timeline.desc">
         <source>Timeline with different types of variation</source>
-        <target state="needs-translation">Timeline with different types of variation</target>
+        <target state="translated">Timeline mit verschiedenen Variationen</target>
       </trans-unit>
     </body>
   </file>
