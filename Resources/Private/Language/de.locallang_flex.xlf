@@ -5,63 +5,63 @@
     <body>
       <trans-unit id="palette.access">
         <source>Access</source>
-        <target state="needs-translation">Access</target>
+        <target state="translated">Zugang</target>
       </trans-unit>
       <trans-unit id="general.headline">
         <source>Headline</source>
-        <target state="needs-translation">Headline</target>
+        <target state="translated">Überschrift</target>
       </trans-unit>
       <trans-unit id="general.subheadline">
         <source>Sub Headline</source>
-        <target state="needs-translation">Sub Headline</target>
+        <target state="translated">Untertitel</target>
       </trans-unit>
       <trans-unit id="general.image">
         <source>Upload image</source>
-        <target state="needs-translation">Upload image</target>
+        <target state="translated">Bild hochladen</target>
       </trans-unit>
       <trans-unit id="general.video">
         <source>Upload Video</source>
-        <target state="needs-translation">Upload Video</target>
+        <target state="translated">Video hochladen</target>
       </trans-unit>
       <trans-unit id="video.url">
         <source>Video URL</source>
-        <target state="needs-translation">Video URL</target>
+        <target state="translated">Video-URL</target>
       </trans-unit>
       <trans-unit id="starting.point">
         <source>Startingpoint</source>
-        <target state="needs-translation">Startingpoint</target>
+        <target state="translated">Ausgangspunkt</target>
       </trans-unit>
       <trans-unit id="content.from">
         <source>Content From</source>
-        <target state="needs-translation">Content From</target>
+        <target state="translated">Inhalt aus</target>
       </trans-unit>
       <trans-unit id="select.timeFormat">
         <source>Select Time Format</source>
-        <target state="needs-translation">Select Time Format</target>
+        <target state="translated">Zeitformat auswählen</target>
       </trans-unit>
       <trans-unit id="details.pid">
         <source>PageId for single news display</source>
-        <target state="needs-translation">PageId for single news display</target>
+        <target state="translated">Seiten-ID für die Anzeige einzelner Nachrichten</target>
       </trans-unit>
       <trans-unit id="order.by">
         <source>Order By</source>
-        <target state="needs-translation">Order By</target>
+        <target state="translated">Sortieren nach</target>
       </trans-unit>
       <trans-unit id="orderBy.tstamp">
         <source>Last Edited</source>
-        <target state="needs-translation">Last Edited</target>
+        <target state="translated">Zuletzt bearbeitet</target>
       </trans-unit>
       <trans-unit id="orderBy.datetime">
         <source>Given Date/Time</source>
-        <target state="needs-translation">Given Date/Time</target>
+        <target state="translated">Angegebenes Datum/Uhrzeit</target>
       </trans-unit>
       <trans-unit id="orderBy.crdate">
         <source>Created</source>
-        <target state="needs-translation">Created</target>
+        <target state="translated">Erstellt</target>
       </trans-unit>
       <trans-unit id="orderBy.title">
         <source>Title</source>
-        <target state="needs-translation">Title</target>
+        <target state="translated">Titel</target>
       </trans-unit>
       <trans-unit id="order.direction">
         <source>Order Direction</source>
@@ -69,135 +69,135 @@
       </trans-unit>
       <trans-unit id="orderDirection.asc">
         <source>Ascending</source>
-        <target state="needs-translation">Ascending</target>
+        <target state="translated">Aufsteigend</target>
       </trans-unit>
       <trans-unit id="orderDirection.desc">
         <source>Descending</source>
-        <target state="needs-translation">Descending</target>
+        <target state="translated">Absteigend</target>
       </trans-unit>
       <trans-unit id="teaser.title">
         <source>Teaser Title</source>
-        <target state="needs-translation">Teaser Title</target>
+        <target state="translated">Teaser-Titel</target>
       </trans-unit>
       <trans-unit id="general.link">
         <source>Link</source>
-        <target state="needs-translation">Link</target>
+        <target state="translated">Link</target>
       </trans-unit>
       <trans-unit id="general.text">
         <source>Text</source>
-        <target state="needs-translation">Text</target>
+        <target state="translated">Text</target>
       </trans-unit>
       <trans-unit id="general.title">
         <source>Title</source>
-        <target state="needs-translation">Title</target>
+        <target state="translated">Titel</target>
       </trans-unit>
       <trans-unit id="general.fields">
         <source>New Fields</source>
-        <target state="needs-translation">New Fields</target>
+        <target state="translated">Neue Felder</target>
       </trans-unit>
       <trans-unit id="function">
         <source>Timeline Fields</source>
-        <target state="needs-translation">Timeline Fields</target>
+        <target state="translated">Zeitleistenfelder</target>
       </trans-unit>
       <trans-unit id="listing.normalStyles">
         <source>Select Standard Variation</source>
-        <target state="needs-translation">Select Standard Variation</target>
+        <target state="translated">Standardvariante auswählen</target>
       </trans-unit>
       <trans-unit id="listing.eventStyles">
         <source>Select Event Variation</source>
-        <target state="needs-translation">Select Event Variation</target>
+        <target state="translated">Veranstaltungsvariante auswählen</target>
       </trans-unit>
       <trans-unit id="listing.newsStyles">
         <source>Select News Variation</source>
-        <target state="needs-translation">Select News Variation</target>
+        <target state="translated">Nachrichtenauswahl variieren</target>
       </trans-unit>
       <trans-unit id="select.mainType">
         <source>Select Type</source>
-        <target state="needs-translation">Select Type</target>
+        <target state="translated">Typ auswählen</target>
       </trans-unit>
       <trans-unit id="normal.type">
         <source>Standard</source>
-        <target state="needs-translation">Standard</target>
+        <target state="translated">Standard</target>
       </trans-unit>
       <trans-unit id="event.type">
         <source>Event</source>
-        <target state="needs-translation">Event</target>
+        <target state="translated">Veranstaltung</target>
       </trans-unit>
       <trans-unit id="animation.listing">
         <source>Select Animation</source>
-        <target state="needs-translation">Select Animation</target>
+        <target state="translated">Animation auswählen</target>
       </trans-unit>
       <trans-unit id="select.theme">
         <source>Select Theme</source>
-        <target state="needs-translation">Select Theme</target>
+        <target state="translated">Thema auswählen</target>
       </trans-unit>
       <trans-unit id="select.themeColor">
         <source>Select Theme Color (Note : This Color is Work When Select Theme is Default)</source>
-        <target state="needs-translation">Select Theme Color (Note : This Color is Work When Select Theme is Default)</target>
+        <target state="translated">Wählen Sie die Themenfarbe aus (Hinweis: Diese Farbe wird verwendet, wenn das Standardthema ausgewählt ist)</target>
       </trans-unit>
       <trans-unit id="alignment.variation">
         <source>Alignment</source>
-        <target state="needs-translation">Alignment</target>
+        <target state="translated">Ausrichtung</target>
       </trans-unit>
       <trans-unit id="alignment.alternate">
         <source>Alternate</source>
-        <target state="needs-translation">Alternate</target>
+        <target state="translated">Alternativ</target>
       </trans-unit>
       <trans-unit id="alignment.left">
         <source>Left</source>
-        <target state="needs-translation">Left</target>
+        <target state="translated">Links</target>
       </trans-unit>
       <trans-unit id="alignment.right">
         <source>Right</source>
-        <target state="needs-translation">Right</target>
+        <target state="translated">Richtig</target>
       </trans-unit>
       <trans-unit id="date.opposite">
         <source>Show Date Opposite</source>
-        <target state="needs-translation">Show Date Opposite</target>
+        <target state="translated">Datum anzeigen Gegenüber</target>
       </trans-unit>
       <trans-unit id="header.text">
         <source>Header Text</source>
-        <target state="needs-translation">Header Text</target>
+        <target state="translated">Kopfzeilentext</target>
       </trans-unit>
       <trans-unit id="select.icon">
         <source>Select Content Icon</source>
-        <target state="needs-translation">Select Content Icon</target>
+        <target state="translated">Inhaltssymbol auswählen</target>
       </trans-unit>
       <trans-unit id="multiple.element">
         <source>Multiple Elements</source>
-        <target state="needs-translation">Multiple Elements</target>
+        <target state="translated">Mehrere Elemente</target>
       </trans-unit>
       <trans-unit id="time.from">
         <source>Time From</source>
-        <target state="needs-translation">Time From</target>
+        <target state="translated">Zeit von</target>
       </trans-unit>
       <trans-unit id="time.to">
         <source>Time To</source>
-        <target state="needs-translation">Time To</target>
+        <target state="translated">Zeit für</target>
       </trans-unit>
       <trans-unit id="select.date">
         <source>Date</source>
-        <target state="needs-translation">Date</target>
+        <target state="translated">Datum</target>
       </trans-unit>
       <trans-unit id="background.color">
         <source>Background Color</source>
-        <target state="needs-translation">Background Color</target>
+        <target state="translated">Hintergrundfarbe</target>
       </trans-unit>
       <trans-unit id="text.color">
         <source>Text Color</source>
-        <target state="needs-translation">Text Color</target>
+        <target state="translated">Textfarbe</target>
       </trans-unit>
       <trans-unit id="timeline.image">
         <source>Timeline Image</source>
-        <target state="needs-translation">Timeline Image</target>
+        <target state="translated">Zeitstrahl-Bild</target>
       </trans-unit>
       <trans-unit id="timeline.icon">
         <source>Select Timeline Icon</source>
-        <target state="needs-translation">Select Timeline Icon</target>
+        <target state="translated">Timeline-Symbol auswählen</target>
       </trans-unit>
       <trans-unit id="image.title">
         <source>Image Title</source>
-        <target state="needs-translation">Image Title</target>
+        <target state="translated">Bildtitel</target>
       </trans-unit>
       <trans-unit id="date.format">
         <source>Date Format</source>
@@ -205,11 +205,11 @@
       </trans-unit>
       <trans-unit id="select.backgroundColor">
         <source>Select Background Color</source>
-        <target state="needs-translation">Select Background Color</target>
+        <target state="translated">Hintergrundfarbe auswählen</target>
       </trans-unit>
       <trans-unit id="select.iconColor">
         <source>Select Icon Color</source>
-        <target state="needs-translation">Select Icon Color</target>
+        <target state="translated">Symbolfarbe auswählen</target>
       </trans-unit>
       <trans-unit id="event.completed">
         <source>Event Completed</source>
