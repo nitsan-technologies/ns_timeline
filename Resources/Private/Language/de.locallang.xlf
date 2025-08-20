@@ -3,45 +3,45 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2015-07-24T20:37:42Z" target-language="de">
     <header/>
     <body>
-      <trans-unit id="palette.access">
+      <trans-unit id="palette.access" approved="yes">
         <source>Access</source>
-        <target state="translated">Zugriff</target>
+        <target state="final">Zugriff</target>
       </trans-unit>
-      <trans-unit id="title">
+      <trans-unit id="title" approved="yes">
         <source>Title</source>
-        <target state="translated">Titel</target>
+        <target state="final">Titel</target>
       </trans-unit>
-      <trans-unit id="extension_title">
+      <trans-unit id="extension_title" approved="yes">
         <source>Ns Timeline</source>
-        <target state="translated">Ns-Zeitachse</target>
+        <target state="final">Ns-Zeitachse</target>
       </trans-unit>
-      <trans-unit id="yesterday">
+      <trans-unit id="yesterday" approved="yes">
         <source>YESTERDAY</source>
-        <target state="translated">GESTERN</target>
+        <target state="final">GESTERN</target>
       </trans-unit>
-      <trans-unit id="today">
+      <trans-unit id="today" approved="yes">
         <source>TODAY</source>
-        <target state="translated">HEUTE</target>
+        <target state="final">HEUTE</target>
       </trans-unit>
-      <trans-unit id="tomorrow">
+      <trans-unit id="tomorrow" approved="yes">
         <source>TOMORROW</source>
-        <target state="translated">MORGEN</target>
+        <target state="final">MORGEN</target>
       </trans-unit>
-      <trans-unit id="type.image">
+      <trans-unit id="type.image" approved="yes">
         <source>Upload Image</source>
-        <target state="translated">Bild hochladen</target>
+        <target state="final">Bild hochladen</target>
       </trans-unit>
-      <trans-unit id="type.video">
+      <trans-unit id="type.video" approved="yes">
         <source>Upload Video</source>
-        <target state="translated">Video hochladen</target>
+        <target state="final">Video hochladen</target>
       </trans-unit>
-      <trans-unit id="type.videoUrl">
+      <trans-unit id="type.videoUrl" approved="yes">
         <source>Upload Video with URL</source>
-        <target state="translated">Video mit URL hochladen</target>
+        <target state="final">Video mit URL hochladen</target>
       </trans-unit>
-      <trans-unit id="type.videoUrl">
+      <trans-unit id="type.videoUrl" approved="yes">
         <source>Upload Video with URL</source>
-        <target state="translated">Video mit URL hochladen</target>
+        <target state="final">Video mit URL hochladen</target>
       </trans-unit>
     </body>
   </file>
