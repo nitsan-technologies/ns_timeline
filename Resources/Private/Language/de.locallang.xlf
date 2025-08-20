@@ -5,43 +5,43 @@
     <body>
       <trans-unit id="palette.access">
         <source>Access</source>
-        <target state="needs-translation">Access</target>
+        <target state="translated">Zugriff</target>
       </trans-unit>
       <trans-unit id="title">
         <source>Title</source>
-        <target state="needs-translation">Title</target>
+        <target state="translated">Titel</target>
       </trans-unit>
       <trans-unit id="extension_title">
         <source>Ns Timeline</source>
-        <target state="needs-translation">Ns Timeline</target>
+        <target state="translated">Ns-Zeitachse</target>
       </trans-unit>
       <trans-unit id="yesterday">
         <source>YESTERDAY</source>
-        <target state="needs-translation">YESTERDAY</target>
+        <target state="translated">GESTERN</target>
       </trans-unit>
       <trans-unit id="today">
         <source>TODAY</source>
-        <target state="needs-translation">TODAY</target>
+        <target state="translated">HEUTE</target>
       </trans-unit>
       <trans-unit id="tomorrow">
         <source>TOMORROW</source>
-        <target state="needs-translation">TOMORROW</target>
+        <target state="translated">MORGEN</target>
       </trans-unit>
       <trans-unit id="type.image">
         <source>Upload Image</source>
-        <target state="needs-translation">Upload Image</target>
+        <target state="translated">Bild hochladen</target>
       </trans-unit>
       <trans-unit id="type.video">
         <source>Upload Video</source>
-        <target state="needs-translation">Upload Video</target>
+        <target state="translated">Video hochladen</target>
       </trans-unit>
       <trans-unit id="type.videoUrl">
         <source>Upload Video with URL</source>
-        <target state="needs-translation">Upload Video with URL</target>
+        <target state="translated">Video mit URL hochladen</target>
       </trans-unit>
       <trans-unit id="type.videoUrl">
         <source>Upload Video with URL</source>
-        <target state="needs-translation">Upload Video with URL</target>
+        <target state="translated">Video mit URL hochladen</target>
       </trans-unit>
     </body>
   </file>
