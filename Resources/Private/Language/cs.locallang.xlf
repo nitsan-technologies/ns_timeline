@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2015-07-24T20:37:42Z" target-language="cs">
+    <header/>
+    <body>
+      <trans-unit id="palette.access">
+        <source>Access</source>
+        <target state="needs-translation">Access</target>
+      </trans-unit>
+      <trans-unit id="title">
+        <source>Title</source>
+        <target state="needs-translation">Title</target>
+      </trans-unit>
+      <trans-unit id="extension_title">
+        <source>Ns Timeline</source>
+        <target state="needs-translation">Ns Timeline</target>
+      </trans-unit>
+      <trans-unit id="yesterday">
+        <source>YESTERDAY</source>
+        <target state="needs-translation">YESTERDAY</target>
+      </trans-unit>
+      <trans-unit id="today">
+        <source>TODAY</source>
+        <target state="needs-translation">TODAY</target>
+      </trans-unit>
+      <trans-unit id="tomorrow">
+        <source>TOMORROW</source>
+        <target state="needs-translation">TOMORROW</target>
+      </trans-unit>
+      <trans-unit id="type.image">
+        <source>Upload Image</source>
+        <target state="needs-translation">Upload Image</target>
+      </trans-unit>
+      <trans-unit id="type.video">
+        <source>Upload Video</source>
+        <target state="needs-translation">Upload Video</target>
+      </trans-unit>
+      <trans-unit id="type.videoUrl">
+        <source>Upload Video with URL</source>
+        <target state="needs-translation">Upload Video with URL</target>
+      </trans-unit>
+      <trans-unit id="type.videoUrl">
+        <source>Upload Video with URL</source>
+        <target state="needs-translation">Upload Video with URL</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
