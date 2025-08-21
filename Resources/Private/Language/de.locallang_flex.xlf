@@ -79,145 +79,145 @@
         <source>Teaser Title</source>
         <target state="final">Teaser-Titel</target>
       </trans-unit>
-      <trans-unit id="general.link">
+      <trans-unit id="general.link" approved="yes">
         <source>Link</source>
-        <target state="translated">Link</target>
+        <target state="final">Link</target>
       </trans-unit>
-      <trans-unit id="general.text">
+      <trans-unit id="general.text" approved="yes">
         <source>Text</source>
-        <target state="translated">Text</target>
+        <target state="final">Text</target>
       </trans-unit>
-      <trans-unit id="general.title">
+      <trans-unit id="general.title" approved="yes">
         <source>Title</source>
-        <target state="translated">Titel</target>
+        <target state="final">Titel</target>
       </trans-unit>
-      <trans-unit id="general.fields">
+      <trans-unit id="general.fields" approved="yes">
         <source>New Fields</source>
-        <target state="translated">Neue Felder</target>
+        <target state="final">Neue Felder</target>
       </trans-unit>
-      <trans-unit id="function">
+      <trans-unit id="function" approved="yes">
         <source>Timeline Fields</source>
-        <target state="translated">Zeitleistenfelder</target>
+        <target state="final">Zeitleistenfelder</target>
       </trans-unit>
-      <trans-unit id="listing.normalStyles">
+      <trans-unit id="listing.normalStyles" approved="yes">
         <source>Select Standard Variation</source>
-        <target state="translated">Standardvariante auswählen</target>
+        <target state="final">Standardvariante auswählen</target>
       </trans-unit>
-      <trans-unit id="listing.eventStyles">
+      <trans-unit id="listing.eventStyles" approved="yes">
         <source>Select Event Variation</source>
-        <target state="translated">Veranstaltungsvariante auswählen</target>
+        <target state="final">Veranstaltungsvariante auswählen</target>
       </trans-unit>
-      <trans-unit id="listing.newsStyles">
+      <trans-unit id="listing.newsStyles" approved="yes">
         <source>Select News Variation</source>
-        <target state="translated">Nachrichtenauswahl variieren</target>
+        <target state="final">Nachrichtenauswahl variieren</target>
       </trans-unit>
-      <trans-unit id="select.mainType">
+      <trans-unit id="select.mainType" approved="yes">
         <source>Select Type</source>
-        <target state="translated">Typ auswählen</target>
+        <target state="final">Typ auswählen</target>
       </trans-unit>
-      <trans-unit id="normal.type">
+      <trans-unit id="normal.type" approved="yes">
         <source>Standard</source>
-        <target state="translated">Standard</target>
+        <target state="final">Standard</target>
       </trans-unit>
-      <trans-unit id="event.type">
+      <trans-unit id="event.type" approved="yes">
         <source>Event</source>
-        <target state="translated">Veranstaltung</target>
+        <target state="final">Veranstaltung</target>
       </trans-unit>
-      <trans-unit id="animation.listing">
+      <trans-unit id="animation.listing" approved="yes">
         <source>Select Animation</source>
-        <target state="translated">Animation auswählen</target>
+        <target state="final">Animation auswählen</target>
       </trans-unit>
-      <trans-unit id="select.theme">
+      <trans-unit id="select.theme" approved="yes">
         <source>Select Theme</source>
-        <target state="translated">Thema auswählen</target>
+        <target state="final">Thema auswählen</target>
       </trans-unit>
-      <trans-unit id="select.themeColor">
+      <trans-unit id="select.themeColor" approved="yes">
         <source>Select Theme Color (Note : This Color is Work When Select Theme is Default)</source>
-        <target state="translated">Wählen Sie die Themenfarbe aus (Hinweis: Diese Farbe wird verwendet, wenn das Standardthema ausgewählt ist)</target>
+        <target state="final">Wählen Sie die Themenfarbe aus (Hinweis: Diese Farbe wird verwendet, wenn das Standardthema ausgewählt ist)</target>
       </trans-unit>
-      <trans-unit id="alignment.variation">
+      <trans-unit id="alignment.variation" approved="yes">
         <source>Alignment</source>
-        <target state="translated">Ausrichtung</target>
+        <target state="final">Ausrichtung</target>
       </trans-unit>
-      <trans-unit id="alignment.alternate">
+      <trans-unit id="alignment.alternate" approved="yes">
         <source>Alternate</source>
-        <target state="translated">Alternativ</target>
+        <target state="final">Alternativ</target>
       </trans-unit>
-      <trans-unit id="alignment.left">
+      <trans-unit id="alignment.left" approved="yes">
         <source>Left</source>
-        <target state="translated">Links</target>
+        <target state="final">Links</target>
       </trans-unit>
-      <trans-unit id="alignment.right">
+      <trans-unit id="alignment.right" approved="yes">
         <source>Right</source>
-        <target state="translated">Richtig</target>
+        <target state="final">Richtig</target>
       </trans-unit>
-      <trans-unit id="date.opposite">
+      <trans-unit id="date.opposite" approved="yes">
         <source>Show Date Opposite</source>
-        <target state="translated">Datum anzeigen Gegenüber</target>
+        <target state="final">Datum anzeigen Gegenüber</target>
       </trans-unit>
-      <trans-unit id="header.text">
+      <trans-unit id="header.text" approved="yes">
         <source>Header Text</source>
-        <target state="translated">Kopfzeilentext</target>
+        <target state="final">Kopfzeilentext</target>
       </trans-unit>
-      <trans-unit id="select.icon">
+      <trans-unit id="select.icon" approved="yes">
         <source>Select Content Icon</source>
-        <target state="translated">Inhaltssymbol auswählen</target>
+        <target state="final">Inhaltssymbol auswählen</target>
       </trans-unit>
-      <trans-unit id="multiple.element">
+      <trans-unit id="multiple.element" approved="yes">
         <source>Multiple Elements</source>
-        <target state="translated">Mehrere Elemente</target>
+        <target state="final">Mehrere Elemente</target>
       </trans-unit>
-      <trans-unit id="time.from">
+      <trans-unit id="time.from" approved="yes">
         <source>Time From</source>
-        <target state="translated">Zeit von</target>
+        <target state="final">Zeit von</target>
       </trans-unit>
-      <trans-unit id="time.to">
+      <trans-unit id="time.to" approved="yes">
         <source>Time To</source>
-        <target state="translated">Zeit für</target>
+        <target state="final">Zeit für</target>
       </trans-unit>
-      <trans-unit id="select.date">
+      <trans-unit id="select.date" approved="yes">
         <source>Date</source>
-        <target state="translated">Datum</target>
+        <target state="final">Datum</target>
       </trans-unit>
-      <trans-unit id="background.color">
+      <trans-unit id="background.color" approved="yes">
         <source>Background Color</source>
-        <target state="translated">Hintergrundfarbe</target>
+        <target state="final">Hintergrundfarbe</target>
       </trans-unit>
-      <trans-unit id="text.color">
+      <trans-unit id="text.color" approved="yes">
         <source>Text Color</source>
-        <target state="translated">Textfarbe</target>
+        <target state="final">Textfarbe</target>
       </trans-unit>
-      <trans-unit id="timeline.image">
+      <trans-unit id="timeline.image" approved="yes">
         <source>Timeline Image</source>
-        <target state="translated">Zeitstrahl-Bild</target>
+        <target state="final">Zeitstrahl-Bild</target>
       </trans-unit>
-      <trans-unit id="timeline.icon">
+      <trans-unit id="timeline.icon" approved="yes">
         <source>Select Timeline Icon</source>
-        <target state="translated">Timeline-Symbol auswählen</target>
+        <target state="final">Timeline-Symbol auswählen</target>
       </trans-unit>
-      <trans-unit id="image.title">
+      <trans-unit id="image.title" approved="yes">
         <source>Image Title</source>
-        <target state="translated">Bildtitel</target>
+        <target state="final">Bildtitel</target>
       </trans-unit>
       <trans-unit id="date.format" approved="yes">
         <source>Date Format</source>
         <target state="final">Date Format</target>
       </trans-unit>
-      <trans-unit id="select.backgroundColor">
+      <trans-unit id="select.backgroundColor" approved="yes">
         <source>Select Background Color</source>
-        <target state="translated">Hintergrundfarbe auswählen</target>
+        <target state="final">Hintergrundfarbe auswählen</target>
       </trans-unit>
-      <trans-unit id="select.iconColor">
+      <trans-unit id="select.iconColor" approved="yes">
         <source>Select Icon Color</source>
-        <target state="translated">Symbolfarbe auswählen</target>
+        <target state="final">Symbolfarbe auswählen</target>
       </trans-unit>
-      <trans-unit id="event.completed">
+      <trans-unit id="event.completed" approved="yes">
         <source>Event Completed</source>
-        <target state="translated">Veranstaltung abgeschlossen</target>
+        <target state="final">Veranstaltung abgeschlossen</target>
       </trans-unit>
-      <trans-unit id="select.type">
+      <trans-unit id="select.type" approved="yes">
         <source>Select Image/video</source>
-        <target state="translated">Bild/Video Auswählen</target>
+        <target state="final">Bild/Video Auswählen</target>
       </trans-unit>
     </body>
   </file>
