@@ -3,21 +3,21 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2015-01-06T20:41:06Z" product-name="NITSANpageadds" target-language="de">
     <header/>
     <body>
-      <trans-unit id="palette.access">
+      <trans-unit id="palette.access" approved="yes">
         <source>Access</source>
-        <target state="translated">Zugriff</target>
+        <target state="final">Zugriff</target>
       </trans-unit>
-      <trans-unit id="headline">
+      <trans-unit id="headline" approved="yes">
         <source>Headline</source>
-        <target state="translated">Überschrift</target>
+        <target state="final">Überschrift</target>
       </trans-unit>
-      <trans-unit id="wizard.ns_timeline">
+      <trans-unit id="wizard.ns_timeline" approved="yes">
         <source>Timeline</source>
-        <target state="translated">Timeline</target>
+        <target state="final">Timeline</target>
       </trans-unit>
-      <trans-unit id="wizard.ns_timeline.desc">
+      <trans-unit id="wizard.ns_timeline.desc" approved="yes">
         <source>Timeline with different types of variation</source>
-        <target state="translated">Timeline mit verschiedenen Variationen</target>
+        <target state="final">Timeline mit verschiedenen Variationen</target>
       </trans-unit>
     </body>
   </file>
