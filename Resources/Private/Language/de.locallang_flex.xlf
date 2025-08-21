@@ -3,81 +3,81 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2015-07-24T20:37:42Z" target-language="de">
     <header/>
     <body>
-      <trans-unit id="palette.access">
+      <trans-unit id="palette.access" approved="yes">
         <source>Access</source>
-        <target state="translated">Zugang</target>
+        <target state="final">Zugang</target>
       </trans-unit>
-      <trans-unit id="general.headline">
+      <trans-unit id="general.headline" approved="yes">
         <source>Headline</source>
-        <target state="translated">Überschrift</target>
+        <target state="final">Überschrift</target>
       </trans-unit>
-      <trans-unit id="general.subheadline">
+      <trans-unit id="general.subheadline" approved="yes">
         <source>Sub Headline</source>
-        <target state="translated">Untertitel</target>
+        <target state="final">Untertitel</target>
       </trans-unit>
-      <trans-unit id="general.image">
+      <trans-unit id="general.image" approved="yes">
         <source>Upload image</source>
-        <target state="translated">Bild hochladen</target>
+        <target state="final">Bild hochladen</target>
       </trans-unit>
-      <trans-unit id="general.video">
+      <trans-unit id="general.video" approved="yes">
         <source>Upload Video</source>
-        <target state="translated">Video hochladen</target>
+        <target state="final">Video hochladen</target>
       </trans-unit>
-      <trans-unit id="video.url">
+      <trans-unit id="video.url" approved="yes">
         <source>Video URL</source>
-        <target state="translated">Video-URL</target>
+        <target state="final">Video-URL</target>
       </trans-unit>
-      <trans-unit id="starting.point">
+      <trans-unit id="starting.point" approved="yes">
         <source>Startingpoint</source>
-        <target state="translated">Ausgangspunkt</target>
+        <target state="final">Ausgangspunkt</target>
       </trans-unit>
-      <trans-unit id="content.from">
+      <trans-unit id="content.from" approved="yes">
         <source>Content From</source>
-        <target state="translated">Inhalt aus</target>
+        <target state="final">Inhalt aus</target>
       </trans-unit>
-      <trans-unit id="select.timeFormat">
+      <trans-unit id="select.timeFormat" approved="yes">
         <source>Select Time Format</source>
-        <target state="translated">Zeitformat auswählen</target>
+        <target state="final">Zeitformat auswählen</target>
       </trans-unit>
-      <trans-unit id="details.pid">
+      <trans-unit id="details.pid" approved="yes">
         <source>PageId for single news display</source>
-        <target state="translated">Seiten-ID für die Anzeige einzelner Nachrichten</target>
+        <target state="final">Seiten-ID für die Anzeige einzelner Nachrichten</target>
       </trans-unit>
-      <trans-unit id="order.by">
+      <trans-unit id="order.by" approved="yes">
         <source>Order By</source>
-        <target state="translated">Sortieren nach</target>
+        <target state="final">Sortieren nach</target>
       </trans-unit>
-      <trans-unit id="orderBy.tstamp">
+      <trans-unit id="orderBy.tstamp" approved="yes">
         <source>Last Edited</source>
-        <target state="translated">Zuletzt bearbeitet</target>
+        <target state="final">Zuletzt bearbeitet</target>
       </trans-unit>
-      <trans-unit id="orderBy.datetime">
+      <trans-unit id="orderBy.datetime" approved="yes">
         <source>Given Date/Time</source>
-        <target state="translated">Angegebenes Datum/Uhrzeit</target>
+        <target state="final">Angegebenes Datum/Uhrzeit</target>
       </trans-unit>
-      <trans-unit id="orderBy.crdate">
+      <trans-unit id="orderBy.crdate" approved="yes">
         <source>Created</source>
-        <target state="translated">Erstellt</target>
+        <target state="final">Erstellt</target>
       </trans-unit>
-      <trans-unit id="orderBy.title">
+      <trans-unit id="orderBy.title" approved="yes">
         <source>Title</source>
-        <target state="translated">Titel</target>
+        <target state="final">Titel</target>
       </trans-unit>
-      <trans-unit id="order.direction">
+      <trans-unit id="order.direction" approved="yes">
         <source>Order Direction</source>
-        <target state="translated">Bestellrichtung</target>
+        <target state="final">Bestellrichtung</target>
       </trans-unit>
-      <trans-unit id="orderDirection.asc">
+      <trans-unit id="orderDirection.asc" approved="yes">
         <source>Ascending</source>
-        <target state="translated">Aufsteigend</target>
+        <target state="final">Aufsteigend</target>
       </trans-unit>
-      <trans-unit id="orderDirection.desc">
+      <trans-unit id="orderDirection.desc" approved="yes">
         <source>Descending</source>
-        <target state="translated">Absteigend</target>
+        <target state="final">Absteigend</target>
       </trans-unit>
-      <trans-unit id="teaser.title">
+      <trans-unit id="teaser.title" approved="yes">
         <source>Teaser Title</source>
-        <target state="translated">Teaser-Titel</target>
+        <target state="final">Teaser-Titel</target>
       </trans-unit>
       <trans-unit id="general.link">
         <source>Link</source>
@@ -199,9 +199,9 @@
         <source>Image Title</source>
         <target state="translated">Bildtitel</target>
       </trans-unit>
-      <trans-unit id="date.format">
+      <trans-unit id="date.format" approved="yes">
         <source>Date Format</source>
-        <target state="translated">Date Format</target>
+        <target state="final">Date Format</target>
       </trans-unit>
       <trans-unit id="select.backgroundColor">
         <source>Select Background Color</source>
