@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2015-07-24T20:37:42Z" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="palette.access" approved="yes">
+        <source>Access</source>
+        <target state="final">Zugriff</target>
+      </trans-unit>
+      <trans-unit id="title" approved="yes">
+        <source>Title</source>
+        <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="extension_title" approved="yes">
+        <source>Ns Timeline</source>
+        <target state="final">Ns-Zeitachse</target>
+      </trans-unit>
+      <trans-unit id="yesterday" approved="yes">
+        <source>YESTERDAY</source>
+        <target state="final">GESTERN</target>
+      </trans-unit>
+      <trans-unit id="today" approved="yes">
+        <source>TODAY</source>
+        <target state="final">HEUTE</target>
+      </trans-unit>
+      <trans-unit id="tomorrow" approved="yes">
+        <source>TOMORROW</source>
+        <target state="final">MORGEN</target>
+      </trans-unit>
+      <trans-unit id="type.image" approved="yes">
+        <source>Upload Image</source>
+        <target state="final">Bild hochladen</target>
+      </trans-unit>
+      <trans-unit id="type.video" approved="yes">
+        <source>Upload Video</source>
+        <target state="final">Video hochladen</target>
+      </trans-unit>
+      <trans-unit id="type.videoUrl" approved="yes">
+        <source>Upload Video with URL</source>
+        <target state="final">Video mit URL hochladen</target>
+      </trans-unit>
+      <trans-unit id="type.videoUrl" approved="yes">
+        <source>Upload Video with URL</source>
+        <target state="final">Video mit URL hochladen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
