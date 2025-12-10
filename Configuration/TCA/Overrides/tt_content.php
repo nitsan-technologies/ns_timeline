@@ -4,7 +4,7 @@ use TYPO3\CMS\Core\Utility\VersionNumberUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $_EXTKEY = 'ns_timeline';
-$versionNumber = VersionNumberUtility::getNumericTypo3Version();
+$versionNumber =  VersionNumberUtility::convertVersionStringToArray(VersionNumberUtility::getCurrentTypo3Version());
 
 // Adds the content element to the "Type" dropdown
 ExtensionManagementUtility::addTcaSelectItem(
@@ -22,7 +22,8 @@ ExtensionManagementUtility::addTcaSelectItem(
 
 $flexFormPath = 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/ns_timeline.xml';
 
-if ($versionNumber != '14.0.0' && $versionNumber != '14.0.1') {
+if ($versionNumber['version_main'] <= '13') {
+    // @extensionScannerIgnoreLine
     ExtensionManagementUtility::addPiFlexFormValue(
         '*',
         'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/ns_timeline.xml',

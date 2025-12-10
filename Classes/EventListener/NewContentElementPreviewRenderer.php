@@ -17,8 +17,8 @@ final class NewContentElementPreviewRenderer
     public function __invoke(PageContentPreviewRenderingEvent $event): void
     {
         $extKey = 'ns_timeline';
-        $versionNumber = VersionNumberUtility::getNumericTypo3Version();
-        if ($versionNumber != '14.0.0' && $versionNumber != '14.0.1') {
+        $versionNumber =  VersionNumberUtility::convertVersionStringToArray(VersionNumberUtility::getCurrentTypo3Version());
+        if ($versionNumber['version_main'] <= '13') {
             $row = $event->getRecord();
         }else{
             $row = $event->getRecord();
@@ -39,7 +39,7 @@ final class NewContentElementPreviewRenderer
             $flexFormAsArray = GeneralUtility::xml2array($row['pi_flexform']);
             $mynormalVariation = $flexFormAsArray['data']['sDEF']['lDEF']['normalVariation']['vDEF'];   // Get Standard Type Values
 
-            if ($versionNumber != '14.0.0' && $versionNumber != '14.0.1') {
+            if ($versionNumber['version_main'] <= '13') {
                 $view = $this->getFluidTemplateOld($extKey, $mynormalVariation);
             }else{
                 $view = $this->getFluidTemplatenew($extKey, $mynormalVariation);
