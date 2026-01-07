@@ -107,12 +107,12 @@ final class NewContentElementPreviewRenderer
      */
     protected function getFluidTemplateOld($extKey, $mynormalVariation)
     {
-        $viewFactory = GeneralUtility::makeInstance(ViewFactoryInterface::class);
-        $viewFactoryData = new ViewFactoryData(
-            templateRootPaths: ['EXT:ns_timeline/Resources/Private/Templates/Backend'],
-        );
-        $view = $viewFactory->create($viewFactoryData);
-        $view->render($mynormalVariation);
+        $fluidTemplateFile = [];
+
+        $fluidTemplateFile = GeneralUtility::getFileAbsFileName('EXT:' . $extKey . '/Resources/Private/Templates/Backend/' . $mynormalVariation . '.html');
+
+        $view = GeneralUtility::makeInstance(StandaloneView::class);
+        $view->setTemplatePathAndFilename($fluidTemplateFile);
         return $view;
     }
 

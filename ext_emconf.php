@@ -14,7 +14,7 @@ $EM_CONF['ns_timeline'] = [
     'version' => '13.0.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.0.0-14.0.1',
+            'typo3' => '12.0.0-14.0.9',
         ],
         'conflicts' => [],
         'suggests' => [],
