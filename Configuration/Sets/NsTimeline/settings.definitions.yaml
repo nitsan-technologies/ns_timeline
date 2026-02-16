@@ -1,0 +1,51 @@
+categories:
+  ns_timeline:
+    label: All Slider
+
+  ns_timeline.view:
+    label: View Settings
+    parent: ns_timeline
+
+  ns_timeline.configuration:
+    label: Configuration Settings
+    parent: ns_timeline
+
+settings:
+
+  ##################################################
+  # View
+  ##################################################
+
+  ns_timeline.view.templateRootPath:
+    label: Template Root Path
+    category: ns_timeline.view
+    type: string
+    default: 'EXT:ns_timeline/Resources/Private/Templates/'
+
+  ns_timeline.view.partialRootPath:
+    label: Partial Root Path
+    category: ns_timeline.view
+    type: string
+    default: 'EXT:ns_timeline/Resources/Private/Partials/'
+
+  ns_timeline.view.layoutRootPath:
+    label: Layout Root Path
+    category: ns_timeline.view
+    type: string
+    default: 'EXT:ns_timeline/Resources/Private/Layouts/'
+
+  ##################################################
+  # Configuration
+  ##################################################
+
+  ns_timeline.configuration.enableThemeColor:
+    label: Enable Theme Color
+    category: ns_timeline.configuration
+    type: bool
+    default: false
+
+  ns_timeline.configuration.themeColor:
+    label: Color
+    category: ns_timeline.configuration
+    type: color
+    default: '#ffffff'
