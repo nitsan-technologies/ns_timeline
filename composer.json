@@ -1,7 +1,7 @@
 {
   "name": "nitsan/ns-timeline",
   "type": "typo3-cms-extension",
-  "description": "Create engaging stories, timelines, histories, and roadmaps easily with the All In One Timeline TYPO3 Extension. With 18 unique styles and layouts, this extension offers unlimited possibilities for showcasing content on your TYPO3 website. Additionally, the TYPO3 Event extension integrates with TYPO3 Blog and TYPO3 News extensions allowing you to display timeline posts.",
+  "description": "TYPO3 Timeline & Events Extension - Create engaging stories, timelines, histories, and roadmaps easily with the All In One Timeline TYPO3 Extension. With 18 unique styles and layouts, this extension offers unlimited possibilities for showcasing content on your TYPO3 website. Additionally, the TYPO3 Event extension integrates with TYPO3 Blog and TYPO3 News extensions allowing you to display timeline posts.",
   "homepage": "https://t3planet.com/typo3-timeline-extension",
   "license": "GPL-2.0+",
   "keywords": [
@@ -15,7 +15,7 @@
     "issues": "https://github.com/nitsan-technologies/ns_timeline/issues"
   },
   "require": {
-     "typo3/cms-core": "^12 || ^13"
+     "typo3/cms-core": "^12 || ^13 ||^14"
   },
   "autoload": {
     "psr-4": {

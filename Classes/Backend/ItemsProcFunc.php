@@ -13,8 +13,9 @@ class ItemsProcFunc
     {
         // change this to dynamically populate the list!
         $config['items'] = [
-              ['Style 01', 'style-1'],
-              ['Style 02', 'style-2'],
+            ['None', ''],
+            ['Style 01', 'style-1'],
+            ['Style 02', 'style-2'],
         ];
     }
 

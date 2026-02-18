@@ -1,0 +1,27 @@
+@import 'EXT:ns_timeline/Configuration/TypoScript/setup.typoscript'
+
+# Grab all the constant
+plugin {
+    ns_timeline {
+        settings {
+            enableThemeColor = {$ns_timeline.configuration.enableThemeColor}
+            themeColor = {$ns_timeline.configuration.themeColor}
+            
+        }
+    }
+}
+
+# Get default content
+lib {
+    enableThemeColor = TEXT
+    enableThemeColor {
+        value = {$ns_timeline.configuration.enableThemeColor}
+        wrap = |
+    }
+
+    themeColor = TEXT
+    themeColor {
+        value = {$ns_timeline.configuration.themeColor}
+        wrap = |
+    }
+}

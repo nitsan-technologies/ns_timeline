@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace NITSAN\NsTimeline\EventListener;
 
+use TYPO3\CMS\Core\View\ViewFactoryData;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Service\FlexFormService;
+use TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools;
+use TYPO3\CMS\Core\Utility\VersionNumberUtility;
+use TYPO3\CMS\Core\View\ViewFactoryInterface;
 use TYPO3\CMS\Backend\View\Event\PageContentPreviewRenderingEvent;
 
 final class NewContentElementPreviewRenderer
@@ -14,22 +17,33 @@ final class NewContentElementPreviewRenderer
     public function __invoke(PageContentPreviewRenderingEvent $event): void
     {
         $extKey = 'ns_timeline';
-        $row = $event->getRecord();
+        $versionNumber =  VersionNumberUtility::convertVersionStringToArray(VersionNumberUtility::getCurrentTypo3Version());
+        if ($versionNumber['version_main'] <= '13') {
+            $row = $event->getRecord();
+        }else{
+            $row = $event->getRecord();
+            $row = $row->getRawRecord()?->toArray() ?? [];
+        }
+       
         if ($row['CType'] === 'nstimeline') {
 
             $drawItem = false;
             $headerContent = '';
 
             if (!empty($row['pi_flexform'])) {
-                /** @var FlexFormService $flexFormService */
-                $flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
+                /** @var FlexFormTools $FlexFormTools */
+                $flexFormService = GeneralUtility::makeInstance(FlexFormTools::class);
             }
 
             $options = [];
             $flexFormAsArray = GeneralUtility::xml2array($row['pi_flexform']);
             $mynormalVariation = $flexFormAsArray['data']['sDEF']['lDEF']['normalVariation']['vDEF'];   // Get Standard Type Values
 
-            $view = $this->getFluidTemplate($extKey, $mynormalVariation);
+            if ($versionNumber['version_main'] <= '13') {
+                $view = $this->getFluidTemplateOld($extKey, $mynormalVariation);
+            }else{
+                $view = $this->getFluidTemplatenew($extKey, $mynormalVariation);
+            }
 
             // If Table Found Then....
             if (isset($flexFormAsArray['data']) && is_array($flexFormAsArray['data'])) {
@@ -86,11 +100,12 @@ final class NewContentElementPreviewRenderer
         }
     }
 
+
     /**
      * @param string $extKey
      * @return StandaloneView
      */
-    protected function getFluidTemplate($extKey, $mynormalVariation)
+    protected function getFluidTemplateOld($extKey, $mynormalVariation)
     {
         $fluidTemplateFile = [];
 
@@ -98,6 +113,21 @@ final class NewContentElementPreviewRenderer
 
         $view = GeneralUtility::makeInstance(StandaloneView::class);
         $view->setTemplatePathAndFilename($fluidTemplateFile);
+        return $view;
+    }
+
+    /**
+     * @param string $extKey
+     * @return StandaloneView
+     */
+    protected function getFluidTemplateNew($extKey, $mynormalVariation)
+    {
+        $viewFactory = GeneralUtility::makeInstance(ViewFactoryInterface::class);
+        $viewFactoryData = new ViewFactoryData(
+            templateRootPaths: ['EXT:ns_timeline/Resources/Private/Templates/Backend'],
+        );
+        $view = $viewFactory->create($viewFactoryData);
+        $view->render($mynormalVariation);
         return $view;
     }
 }
