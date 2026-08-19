@@ -25,7 +25,7 @@ final class NewContentElementPreviewRenderer
             $row = $row->getRawRecord()?->toArray() ?? [];
         }
        
-        if ($row['CType'] === 'nstimeline') {
+        if ($row['CType'] === 'nstimeline' && !is_null($row['pi_flexform'])) {
 
             $drawItem = false;
             $headerContent = '';

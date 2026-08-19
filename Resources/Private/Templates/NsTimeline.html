@@ -7,8 +7,9 @@
     <f:render section="content" arguments="{content: content}" />
 
     <f:section name="content">
-        <f:render partial="Standard/{f:format.case(mode: 'capital', value: '{content.normalVariation}')}.html" arguments="{_all}"/>
-            
+        <f:if condition="{content.normalVariation}">
+            <f:render partial="Standard/{f:format.case(mode: 'capital', value: '{content.normalVariation}')}.html" arguments="{_all}"/>
+        </f:if>
     </f:section>
 </div>    
 
