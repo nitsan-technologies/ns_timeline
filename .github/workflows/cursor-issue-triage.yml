@@ -22,6 +22,7 @@ jobs:
     secrets:
       CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
       CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+      CLICKUP_ASSIGNEES: ${{ secrets.CLICKUP_ASSIGNEES }}
     with:
       bot_ref: task/clickup-integration
       base_branch: main
