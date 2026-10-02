@@ -1,0 +1,64 @@
+name: T3Planet AI Bot
+
+on:
+  issues:
+    types: [opened, labeled, closed]
+  issue_comment:
+    types: [created]
+  pull_request:
+    types: [opened, edited, synchronize, reopened, closed, ready_for_review, converted_to_draft]
+  pull_request_review:
+    types: [submitted, edited]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  resolve:
+    if: |
+      (
+        github.event_name == 'issues' &&
+        github.event.action == 'opened'
+      ) ||
+      (
+        github.event_name == 'issues' &&
+        github.event.action == 'labeled' &&
+        github.event.label.name == 't3planet-ai'
+      ) ||
+      (
+        github.event_name == 'issue_comment' &&
+        !github.event.issue.pull_request &&
+        github.event.comment.user.type != 'Bot' &&
+        contains(github.event.issue.labels.*.name, 'needs-information')
+      )
+    # Testing ClickUp: switch back to a release tag (e.g. @v1.1.0) once it is published.
+    uses: nitsan-technologies/t3planet-ai-bot/.github/workflows/issue-resolver.yml@task/clickup-integration
+    secrets:
+      CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+      CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+    with:
+      bot_ref: task/clickup-integration
+      base_branch: main
+      clickup_enabled: "true"
+      clickup_team_id: ${{ vars.CLICKUP_TEAM_ID }}
+      clickup_list_id: ${{ vars.CLICKUP_LIST_ID }}
+
+  clickup:
+    if: |
+      (
+        github.event_name == 'issues' &&
+        github.event.action == 'closed' &&
+        !github.event.issue.pull_request
+      ) ||
+      github.event_name == 'pull_request' ||
+      github.event_name == 'pull_request_review'
+    uses: nitsan-technologies/t3planet-ai-bot/.github/workflows/clickup-sync.yml@task/clickup-integration
+    secrets:
+      CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+    with:
+      bot_ref: task/clickup-integration
+      clickup_enabled: "true"
+      clickup_team_id: ${{ vars.CLICKUP_TEAM_ID }}
+      clickup_list_id: ${{ vars.CLICKUP_LIST_ID }}
