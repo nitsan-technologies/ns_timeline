@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2015-07-24T20:37:42Z" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="palette.access" approved="yes">
+        <source>Access</source>
+        <target state="final">Zugang</target>
+      </trans-unit>
+      <trans-unit id="general.headline" approved="yes">
+        <source>Headline</source>
+        <target state="final">Überschrift</target>
+      </trans-unit>
+      <trans-unit id="general.subheadline" approved="yes">
+        <source>Sub Headline</source>
+        <target state="final">Untertitel</target>
+      </trans-unit>
+      <trans-unit id="general.image" approved="yes">
+        <source>Upload image</source>
+        <target state="final">Bild hochladen</target>
+      </trans-unit>
+      <trans-unit id="general.video" approved="yes">
+        <source>Upload Video</source>
+        <target state="final">Video hochladen</target>
+      </trans-unit>
+      <trans-unit id="video.url" approved="yes">
+        <source>Video URL</source>
+        <target state="final">Video-URL</target>
+      </trans-unit>
+      <trans-unit id="starting.point" approved="yes">
+        <source>Startingpoint</source>
+        <target state="final">Ausgangspunkt</target>
+      </trans-unit>
+      <trans-unit id="content.from" approved="yes">
+        <source>Content From</source>
+        <target state="final">Inhalt aus</target>
+      </trans-unit>
+      <trans-unit id="select.timeFormat" approved="yes">
+        <source>Select Time Format</source>
+        <target state="final">Zeitformat auswählen</target>
+      </trans-unit>
+      <trans-unit id="details.pid" approved="yes">
+        <source>PageId for single news display</source>
+        <target state="final">Seiten-ID für die Anzeige einzelner Nachrichten</target>
+      </trans-unit>
+      <trans-unit id="order.by" approved="yes">
+        <source>Order By</source>
+        <target state="final">Sortieren nach</target>
+      </trans-unit>
+      <trans-unit id="orderBy.tstamp" approved="yes">
+        <source>Last Edited</source>
+        <target state="final">Zuletzt bearbeitet</target>
+      </trans-unit>
+      <trans-unit id="orderBy.datetime" approved="yes">
+        <source>Given Date/Time</source>
+        <target state="final">Angegebenes Datum/Uhrzeit</target>
+      </trans-unit>
+      <trans-unit id="orderBy.crdate" approved="yes">
+        <source>Created</source>
+        <target state="final">Erstellt</target>
+      </trans-unit>
+      <trans-unit id="orderBy.title" approved="yes">
+        <source>Title</source>
+        <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="order.direction" approved="yes">
+        <source>Order Direction</source>
+        <target state="final">Bestellrichtung</target>
+      </trans-unit>
+      <trans-unit id="orderDirection.asc" approved="yes">
+        <source>Ascending</source>
+        <target state="final">Aufsteigend</target>
+      </trans-unit>
+      <trans-unit id="orderDirection.desc" approved="yes">
+        <source>Descending</source>
+        <target state="final">Absteigend</target>
+      </trans-unit>
+      <trans-unit id="teaser.title" approved="yes">
+        <source>Teaser Title</source>
+        <target state="final">Teaser-Titel</target>
+      </trans-unit>
+      <trans-unit id="general.link" approved="yes">
+        <source>Link</source>
+        <target state="final">Link</target>
+      </trans-unit>
+      <trans-unit id="general.text" approved="yes">
+        <source>Text</source>
+        <target state="final">Text</target>
+      </trans-unit>
+      <trans-unit id="general.title" approved="yes">
+        <source>Title</source>
+        <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="general.fields" approved="yes">
+        <source>New Fields</source>
+        <target state="final">Neue Felder</target>
+      </trans-unit>
+      <trans-unit id="function" approved="yes">
+        <source>Timeline Fields</source>
+        <target state="final">Zeitleistenfelder</target>
+      </trans-unit>
+      <trans-unit id="listing.normalStyles" approved="yes">
+        <source>Select Standard Variation</source>
+        <target state="final">Standardvariante auswählen</target>
+      </trans-unit>
+      <trans-unit id="listing.eventStyles" approved="yes">
+        <source>Select Event Variation</source>
+        <target state="final">Veranstaltungsvariante auswählen</target>
+      </trans-unit>
+      <trans-unit id="listing.newsStyles" approved="yes">
+        <source>Select News Variation</source>
+        <target state="final">Nachrichtenauswahl variieren</target>
+      </trans-unit>
+      <trans-unit id="select.mainType" approved="yes">
+        <source>Select Type</source>
+        <target state="final">Typ auswählen</target>
+      </trans-unit>
+      <trans-unit id="normal.type" approved="yes">
+        <source>Standard</source>
+        <target state="final">Standard</target>
+      </trans-unit>
+      <trans-unit id="event.type" approved="yes">
+        <source>Event</source>
+        <target state="final">Veranstaltung</target>
+      </trans-unit>
+      <trans-unit id="animation.listing" approved="yes">
+        <source>Select Animation</source>
+        <target state="final">Animation auswählen</target>
+      </trans-unit>
+      <trans-unit id="select.theme" approved="yes">
+        <source>Select Theme</source>
+        <target state="final">Thema auswählen</target>
+      </trans-unit>
+      <trans-unit id="select.themeColor" approved="yes">
+        <source>Select Theme Color (Note : This Color is Work When Select Theme is Default)</source>
+        <target state="final">Wählen Sie die Themenfarbe aus (Hinweis: Diese Farbe wird verwendet, wenn das Standardthema ausgewählt ist)</target>
+      </trans-unit>
+      <trans-unit id="alignment.variation" approved="yes">
+        <source>Alignment</source>
+        <target state="final">Ausrichtung</target>
+      </trans-unit>
+      <trans-unit id="alignment.alternate" approved="yes">
+        <source>Alternate</source>
+        <target state="final">Alternativ</target>
+      </trans-unit>
+      <trans-unit id="alignment.left" approved="yes">
+        <source>Left</source>
+        <target state="final">Links</target>
+      </trans-unit>
+      <trans-unit id="alignment.right" approved="yes">
+        <source>Right</source>
+        <target state="final">Richtig</target>
+      </trans-unit>
+      <trans-unit id="date.opposite" approved="yes">
+        <source>Show Date Opposite</source>
+        <target state="final">Datum anzeigen Gegenüber</target>
+      </trans-unit>
+      <trans-unit id="header.text" approved="yes">
+        <source>Header Text</source>
+        <target state="final">Kopfzeilentext</target>
+      </trans-unit>
+      <trans-unit id="select.icon" approved="yes">
+        <source>Select Content Icon</source>
+        <target state="final">Inhaltssymbol auswählen</target>
+      </trans-unit>
+      <trans-unit id="multiple.element" approved="yes">
+        <source>Multiple Elements</source>
+        <target state="final">Mehrere Elemente</target>
+      </trans-unit>
+      <trans-unit id="time.from" approved="yes">
+        <source>Time From</source>
+        <target state="final">Zeit von</target>
+      </trans-unit>
+      <trans-unit id="time.to" approved="yes">
+        <source>Time To</source>
+        <target state="final">Zeit für</target>
+      </trans-unit>
+      <trans-unit id="select.date" approved="yes">
+        <source>Date</source>
+        <target state="final">Datum</target>
+      </trans-unit>
+      <trans-unit id="background.color" approved="yes">
+        <source>Background Color</source>
+        <target state="final">Hintergrundfarbe</target>
+      </trans-unit>
+      <trans-unit id="text.color" approved="yes">
+        <source>Text Color</source>
+        <target state="final">Textfarbe</target>
+      </trans-unit>
+      <trans-unit id="timeline.image" approved="yes">
+        <source>Timeline Image</source>
+        <target state="final">Zeitstrahl-Bild</target>
+      </trans-unit>
+      <trans-unit id="timeline.icon" approved="yes">
+        <source>Select Timeline Icon</source>
+        <target state="final">Timeline-Symbol auswählen</target>
+      </trans-unit>
+      <trans-unit id="image.title" approved="yes">
+        <source>Image Title</source>
+        <target state="final">Bildtitel</target>
+      </trans-unit>
+      <trans-unit id="date.format" approved="yes">
+        <source>Date Format</source>
+        <target state="final">Date Format</target>
+      </trans-unit>
+      <trans-unit id="select.backgroundColor" approved="yes">
+        <source>Select Background Color</source>
+        <target state="final">Hintergrundfarbe auswählen</target>
+      </trans-unit>
+      <trans-unit id="select.iconColor" approved="yes">
+        <source>Select Icon Color</source>
+        <target state="final">Symbolfarbe auswählen</target>
+      </trans-unit>
+      <trans-unit id="event.completed" approved="yes">
+        <source>Event Completed</source>
+        <target state="final">Veranstaltung abgeschlossen</target>
+      </trans-unit>
+      <trans-unit id="select.type" approved="yes">
+        <source>Select Image/video</source>
+        <target state="final">Bild/Video Auswählen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
