@@ -1,0 +1,9 @@
+/.crowdin.yml export-ignore
+/.gitattributes export-ignore
+/.github export-ignore
+/AGENTS.md export-ignore
+/CLAUDE.md export-ignore
+/Documentation.tmpl export-ignore
+/context export-ignore
+/crowdin.yml export-ignore
+/tasks export-ignore

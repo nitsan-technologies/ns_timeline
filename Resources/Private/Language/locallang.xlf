@@ -34,6 +34,15 @@
             <trans-unit id="type.videoUrl">
                 <source>Upload Video with URL</source>
             </trans-unit>
+			<trans-unit id="premium.strip.headline" xml:space="preserve">
+				<source>You're using the free version of NS Timeline</source>
+			</trans-unit>
+			<trans-unit id="premium.strip.description" xml:space="preserve">
+				<source>Unlock premium features and get more out of NS Timeline.</source>
+			</trans-unit>
+			<trans-unit id="premium.strip.trial" xml:space="preserve">
+				<source>Start Free Trial</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
