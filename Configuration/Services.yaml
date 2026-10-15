@@ -7,5 +7,17 @@ services:
   NITSAN\NsTimeline\EventListener\NewContentElementPreviewRenderer:
     tags:
       - name: event.listener
-        identifier: 'flexform-process'
+        identifier: 'ns-timeline/flexform-process'
         event: TYPO3\CMS\Backend\View\Event\PageContentPreviewRenderingEvent
+
+  NITSAN\NsTimeline\Backend\PremiumStrip: ~
+
+  NITSAN\NsTimeline\Form\:
+    resource: '../Classes/Form/*'
+
+  NITSAN\NsTimeline\EventListener\PremiumStripPreview:
+    tags:
+      - name: event.listener
+        identifier: 'ns-timeline/premium-strip-preview'
+        event: TYPO3\CMS\Backend\View\Event\PageContentPreviewRenderingEvent
+        after: 'ns-timeline/flexform-process'

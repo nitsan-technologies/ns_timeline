@@ -11,10 +11,11 @@ $EM_CONF['ns_timeline'] = [
     'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
-    'version' => '14.0.1',
+    'version' => '14.0.2',
     'constraints' => [
         'depends' => [
             'typo3' => '12.0.0-14.9.99',
+            'ns_license' => '14.5.4-14.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],

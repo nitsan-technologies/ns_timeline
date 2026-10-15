@@ -14,6 +14,10 @@ use TYPO3\CMS\Backend\View\Event\PageContentPreviewRenderingEvent;
 
 final class NewContentElementPreviewRenderer
 {
+    public function __construct(
+        private readonly PremiumStripPreview $premiumStripPreview,
+    ) {}
+
     public function __invoke(PageContentPreviewRenderingEvent $event): void
     {
         $extKey = 'ns_timeline';
@@ -94,7 +98,7 @@ final class NewContentElementPreviewRenderer
             $view->assignMultiple(['flexformData' => $options]);
 
             // return the preview
-            $event->setPreviewContent($view->render());
+            $event->setPreviewContent($this->premiumStripPreview->prependTo($view->render()));
 
 
         }
