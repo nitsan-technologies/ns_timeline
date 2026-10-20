@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2015-01-06T20:41:06Z" product-name="NITSANpageadds" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="palette.access" approved="yes">
+        <source>Access</source>
+        <target state="final">Zugriff</target>
+      </trans-unit>
+      <trans-unit id="headline" approved="yes">
+        <source>Headline</source>
+        <target state="final">Überschrift</target>
+      </trans-unit>
+      <trans-unit id="wizard.ns_timeline" approved="yes">
+        <source>Timeline</source>
+        <target state="final">Timeline</target>
+      </trans-unit>
+      <trans-unit id="wizard.ns_timeline.desc" approved="yes">
+        <source>Timeline with different types of variation</source>
+        <target state="final">Timeline mit verschiedenen Variationen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
