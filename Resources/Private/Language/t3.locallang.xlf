@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2015-07-24T20:37:42Z" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="palette.access">
+        <source>Access</source>
+        <target>crwdns374520:0crwdne374520:0</target>
+      </trans-unit>
+      <trans-unit id="title">
+        <source>Title</source>
+        <target>crwdns374522:0crwdne374522:0</target>
+      </trans-unit>
+      <trans-unit id="extension_title">
+        <source>Ns Timeline</source>
+        <target>crwdns374524:0crwdne374524:0</target>
+      </trans-unit>
+      <trans-unit id="yesterday">
+        <source>YESTERDAY</source>
+        <target>crwdns374526:0crwdne374526:0</target>
+      </trans-unit>
+      <trans-unit id="today">
+        <source>TODAY</source>
+        <target>crwdns374528:0crwdne374528:0</target>
+      </trans-unit>
+      <trans-unit id="tomorrow">
+        <source>TOMORROW</source>
+        <target>crwdns374530:0crwdne374530:0</target>
+      </trans-unit>
+      <trans-unit id="type.image">
+        <source>Upload Image</source>
+        <target>crwdns374532:0crwdne374532:0</target>
+      </trans-unit>
+      <trans-unit id="type.video">
+        <source>Upload Video</source>
+        <target>crwdns374534:0crwdne374534:0</target>
+      </trans-unit>
+      <trans-unit id="type.videoUrl">
+        <source>Upload Video with URL</source>
+        <target>crwdns374536:0crwdne374536:0</target>
+      </trans-unit>
+      <trans-unit id="type.videoUrl">
+        <source>Upload Video with URL</source>
+        <target>crwdns374536:0crwdne374536:0</target>
+      </trans-unit>
+      <trans-unit id="premium.strip.headline" xml:space="preserve">
+				<source>You're using the free version of NS Timeline</source>
+			<target>crwdns415251:0crwdne415251:0</target></trans-unit>
+      <trans-unit id="premium.strip.description" xml:space="preserve">
+				<source>Unlock premium features and get more out of NS Timeline.</source>
+			<target>crwdns415253:0crwdne415253:0</target></trans-unit>
+      <trans-unit id="premium.strip.trial" xml:space="preserve">
+				<source>Start Free Trial</source>
+			<target>crwdns415255:0crwdne415255:0</target></trans-unit>
+    </body>
+  </file>
+</xliff>
